@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>NuScale Ch5 Ontology Visualizer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', -apple-system, sans-serif; background: #0a0e17; color: #e0e0e0; overflow: hidden; }
+
+#app { display: flex; height: 100vh; }
+
+/* Sidebar */
+#sidebar {
+  width: 320px; min-width: 320px;
+  background: #111827; border-right: 1px solid #1e293b;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+#sidebar h1 { font-size: 14px; padding: 16px; border-bottom: 1px solid #1e293b; color: #60a5fa; }
+#sidebar h1 span { color: #94a3b8; font-weight: normal; }
+
+/* Stats */
+#stats {
+  padding: 12px 16px; border-bottom: 1px solid #1e293b;
+  font-size: 12px; color: #94a3b8;
+}
+#stats .row { display: flex; justify-content: space-between; margin: 2px 0; }
+#stats .val { color: #e2e8f0; font-weight: 600; }
+
+/* Filter */
+#filters {
+  padding: 12px 16px; border-bottom: 1px solid #1e293b;
+  overflow-y: auto; max-height: 300px;
+}
+#filters h3 { font-size: 11px; text-transform: uppercase; color: #64748b; margin-bottom: 8px; letter-spacing: 1px; }
+.filter-item {
+  display: flex; align-items: center; gap: 6px;
+  padding: 3px 0; font-size: 12px; cursor: pointer; user-select: none;
+}
+.filter-item:hover { color: #fff; }
+.filter-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.filter-count { color: #64748b; margin-left: auto; font-size: 11px; }
+.filter-item.disabled { opacity: 0.3; }
+.filter-item.disabled .filter-dot { background: #374151 !important; }
+
+/* Edge filters */
+#edgeFilters { padding: 12px 16px; border-bottom: 1px solid #1e293b; overflow-y: auto; max-height: 200px; }
+#edgeFilters h3 { font-size: 11px; text-transform: uppercase; color: #64748b; margin-bottom: 8px; letter-spacing: 1px; }
+.edge-filter-item {
+  display: flex; align-items: center; gap: 6px;
+  padding: 2px 0; font-size: 11px; cursor: pointer; user-select: none;
+}
+.edge-filter-item:hover { color: #fff; }
+.edge-line { width: 16px; height: 2px; flex-shrink: 0; border-radius: 1px; }
+.edge-filter-item.disabled { opacity: 0.3; }
+
+/* Detail panel */
+#detail {
+  flex: 1; padding: 16px; overflow-y: auto; font-size: 12px;
+}
+#detail h3 { font-size: 13px; color: #60a5fa; margin-bottom: 8px; }
+#detail .field { margin-bottom: 6px; }
+#detail .field-label { color: #64748b; font-size: 11px; }
+#detail .field-value { color: #e2e8f0; }
+#detail .connections { margin-top: 12px; }
+#detail .conn-item {
+  padding: 4px 8px; margin: 2px 0; background: #1e293b; border-radius: 4px;
+  font-size: 11px; cursor: pointer;
+}
+#detail .conn-item:hover { background: #334155; }
+#detail .conn-label { color: #94a3b8; }
+#detail .conn-type { color: #64748b; font-size: 10px; }
+
+/* Graph area */
+#graph-container { flex: 1; position: relative; }
+canvas { display: block; }
+
+/* Search */
+#search-box {
+  position: absolute; top: 12px; left: 12px; right: 12px;
+  display: flex; gap: 8px;
+}
+#search {
+  flex: 1; padding: 8px 12px; background: #1e293b; border: 1px solid #334155;
+  border-radius: 6px; color: #e2e8f0; font-size: 13px; outline: none;
+}
+#search:focus { border-color: #60a5fa; }
+#search::placeholder { color: #64748b; }
+
+/* Controls */
+#controls {
+  position: absolute; bottom: 12px; right: 12px;
+  display: flex; gap: 4px;
+}
+#controls button {
+  width: 36px; height: 36px; background: #1e293b; border: 1px solid #334155;
+  border-radius: 6px; color: #94a3b8; font-size: 18px; cursor: pointer;
+}
+#controls button:hover { background: #334155; color: #fff; }
+
+/* Tooltip */
+#tooltip {
+  position: absolute; pointer-events: none; display: none;
+  background: rgba(17,24,39,0.95); border: 1px solid #334155;
+  border-radius: 6px; padding: 8px 12px; font-size: 12px;
+  max-width: 300px; z-index: 100;
+}
+#tooltip .tt-title { font-weight: 600; color: #e2e8f0; margin-bottom: 2px; }
+#tooltip .tt-type { color: #64748b; font-size: 11px; }
+#tooltip .tt-desc { color: #94a3b8; font-size: 11px; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="sidebar">
+    <h1>NuScale Ch5 Ontology <span>| OWL Visualizer</span></h1>
+    <div id="stats"></div>
+    <div id="filters"></div>
+    <div id="edgeFilters"></div>
+    <div id="detail"><div style="color:#64748b;padding:20px 0;text-align:center;">Click a node to see details</div></div>
+  </div>
+  <div id="graph-container">
+    <div id="search-box"><input id="search" placeholder="Search nodes... (e.g. sec_5_4, GDC, pressurizer)"></div>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+      <button id="zoomIn" title="Zoom In">+</button>
+      <button id="zoomOut" title="Zoom Out">-</button>
+      <button id="resetView" title="Reset View">R</button>
+    </div>
+    <div id="tooltip"></div>
+  </div>
+</div>
+
+<script>
+let DATA = null;
+let nodes = [], edges = [];
+let nodeMap = {};
+
+let transform = { x: 0, y: 0, k: 0.4 };
+let selectedNode = null;
+let hoveredNode = null;
+let dragging = null;
+let dragStart = null;
+let isPanning = false;
+let panStart = null;
+let needsRedraw = true;
+
+let disabledNodeTypes = new Set();
+let disabledEdgeTypes = new Set();
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  const container = document.getElementById('graph-container');
+  canvas.width = container.clientWidth * window.devicePixelRatio;
+  canvas.height = container.clientHeight * window.devicePixelRatio;
+  canvas.style.width = container.clientWidth + 'px';
+  canvas.style.height = container.clientHeight + 'px';
+  ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+  needsRedraw = true;
+}
+
+// ========== TREE-BASED LAYOUT ==========
+function initPositions() {
+  // Step 1: Build section tree from parent/contains edges
+  const children = {};   // parentId -> [childId, ...]
+  const parentOf = {};   // childId -> parentId
+
+  edges.forEach(e => {
+    if (e.type === 'contains') {
+      if (!children[e.source]) children[e.source] = [];
+      children[e.source].push(e.target);
+      parentOf[e.target] = e.source;
+    }
+  });
+
+  // Find tree root (Template with no parent that has children)
+  const templates = nodes.filter(n => n.type === 'Template');
+  const root = templates.find(n => !parentOf[n.id] && children[n.id]);
+  if (!root) { fallbackLayout(); return; }
+
+  // Step 2: Compute tree layout (horizontal tree, left to right)
+  const X_STEP = 250;  // horizontal gap per depth level
+  const Y_GAP = 50;    // vertical gap between siblings
+  let yCounter = 0;
+
+  function sortChildren(ids) {
+    return (ids || [])
+      .map(id => nodeMap[id]?.node)
+      .filter(n => n && n.type === 'Template')
+      .sort((a, b) => {
+        if (a.section && b.section) return a.section.localeCompare(b.section, undefined, {numeric: true});
+        return a.id.localeCompare(b.id);
+      });
+  }
+
+  function layoutTree(nodeId, depth) {
+    const n = nodeMap[nodeId]?.node;
+    if (!n) return;
+    const kids = sortChildren(children[nodeId]);
+
+    if (kids.length === 0) {
+      // Leaf node
+      n.x = depth * X_STEP;
+      n.y = yCounter * Y_GAP;
+      n._treeX = n.x;
+      n._treeY = n.y;
+      n._placed = true;
+      yCounter++;
+    } else {
+      // Layout children first
+      const firstY = yCounter;
+      kids.forEach(kid => layoutTree(kid.id, depth + 1));
+      const lastY = yCounter - 1;
+      // Center parent between first and last child
+      n.x = depth * X_STEP;
+      n.y = ((firstY + lastY) / 2) * Y_GAP;
+      n._treeX = n.x;
+      n._treeY = n.y;
+      n._placed = true;
+    }
+  }
+
+  layoutTree(root.id, 0);
+
+  // Step 3: Place non-Template nodes near their connected Template
+  // Build a map: non-template node -> which templates it connects to
+  const nonTemplates = nodes.filter(n => !n._placed);
+
+  nonTemplates.forEach(n => {
+    // Find connected template nodes
+    const connectedTemplates = [];
+    edges.forEach(e => {
+      if (e.source === n.id && nodeMap[e.target]?.node?._placed) connectedTemplates.push(nodeMap[e.target].node);
+      if (e.target === n.id && nodeMap[e.source]?.node?._placed) connectedTemplates.push(nodeMap[e.source].node);
+    });
+
+    if (connectedTemplates.length > 0) {
+      // Average position of connected templates, offset to the right
+      const avgX = connectedTemplates.reduce((s, t) => s + t.x, 0) / connectedTemplates.length;
+      const avgY = connectedTemplates.reduce((s, t) => s + t.y, 0) / connectedTemplates.length;
+      n._anchorX = avgX;
+      n._anchorY = avgY;
+    } else {
+      n._anchorX = 0;
+      n._anchorY = 0;
+    }
+  });
+
+  // Group non-templates by type, place in columns to the right of the tree
+  const typeOffsets = {
+    'InformationItem': 80,
+    'Condition': 160,
+    'MechanicalParameter': 260, 'ThermalParameter': 260, 'FlowParameter': 260,
+    'MaterialSpec': 260, 'ChemistryParameter': 260, 'DesignParameter': 260,
+    'ReviewActivity': 360,
+    'TableTemplate': -100,
+    'FigureTemplate': -160,
+    'GeneralDesignCriterion': 460, 'FederalRegulation': 460,
+    'RegulatoryGuide': 460, 'IndustryCode': 460,
+    'Component': -240, 'Valve': -240, 'Pressurizer': -240,
+    'SteamGenerator': -240, 'ReactorPressureVessel': -240,
+    'Piping': -240, 'HeatExchanger': -240, 'Instrument': -240, 'Tank': -240, 'Pump': -240,
+    'System': -320,
+    'COLItem': 540,
+    'Class': 620,
+  };
+
+  // Sort non-templates by anchor Y so they don't cross too much
+  nonTemplates.sort((a, b) => (a._anchorY || 0) - (b._anchorY || 0));
+
+  // Track Y positions per type-column to avoid overlap
+  const colYCounters = {};
+  nonTemplates.forEach(n => {
+    const xOff = typeOffsets[n.type] ?? 500;
+    const colKey = xOff;
+    if (!colYCounters[colKey]) colYCounters[colKey] = [];
+
+    // Target Y is near its anchor
+    let targetY = n._anchorY || 0;
+
+    // Find non-overlapping Y
+    const used = colYCounters[colKey];
+    let finalY = targetY;
+    const minGap = 22;
+    for (let attempt = 0; attempt < 200; attempt++) {
+      const conflict = used.some(uy => Math.abs(uy - finalY) < minGap);
+      if (!conflict) break;
+      finalY += minGap;
+    }
+    used.push(finalY);
+
+    // Place: tree max X + offset
+    const treeMaxX = Math.max(...templates.filter(t => t._placed).map(t => t.x), 0);
+    n.x = treeMaxX + 100 + xOff;
+    n.y = finalY;
+    n._placed = true;
+  });
+
+  // Step 4: Shift everything so top-left starts near origin with padding
+  let minX = Infinity, minY = Infinity;
+  nodes.forEach(n => { if (n._placed) { minX = Math.min(minX, n.x); minY = Math.min(minY, n.y); } });
+  const padX = 100, padY = 100;
+  nodes.forEach(n => { n.x -= minX - padX; n.y -= minY - padY; });
+
+  // Clean up temp props
+  nodes.forEach(n => { delete n._treeX; delete n._treeY; delete n._placed; delete n._anchorX; delete n._anchorY; });
+}
+
+function fallbackLayout() {
+  // Simple grid fallback if tree building fails
+  nodes.forEach((n, i) => {
+    n.x = (i % 20) * 80 + 100;
+    n.y = Math.floor(i / 20) * 60 + 100;
+  });
+}
+
+function getNodeRadius(n) {
+  const conn = (nodeMap[n.id]?.edgeCount || 0);
+  if (n.type === 'Template' && n.id.split('_').length <= 3) return 14;
+  if (n.type === 'Template') return 9;
+  if (conn > 10) return 11;
+  if (conn > 5) return 8;
+  return 5;
+}
+
+function buildNodeMap() {
+  nodeMap = {};
+  nodes.forEach(n => { nodeMap[n.id] = { node: n, edgeCount: 0, edges: [] }; });
+  edges.forEach(e => {
+    if (nodeMap[e.source]) { nodeMap[e.source].edgeCount++; nodeMap[e.source].edges.push(e); }
+    if (nodeMap[e.target]) { nodeMap[e.target].edgeCount++; nodeMap[e.target].edges.push(e); }
+  });
+  nodes.forEach(n => { n.radius = getNodeRadius(n); });
+}
+
+// ========== RENDERING ==========
+function isNodeVisible(n) { return !disabledNodeTypes.has(n.type); }
+function isEdgeVisible(e) {
+  if (disabledEdgeTypes.has(e.type)) return false;
+  const s = nodeMap[e.source]?.node;
+  const t = nodeMap[e.target]?.node;
+  if (!s || !t) return false;
+  return isNodeVisible(s) && isNodeVisible(t);
+}
+
+function draw() {
+  const W = canvas.width / window.devicePixelRatio;
+  const H = canvas.height / window.devicePixelRatio;
+  ctx.clearRect(0, 0, W, H);
+
+  ctx.save();
+  ctx.translate(transform.x, transform.y);
+  ctx.scale(transform.k, transform.k);
+
+  // Edges
+  edges.forEach(e => {
+    if (!isEdgeVisible(e)) return;
+    const s = nodeMap[e.source]?.node;
+    const t = nodeMap[e.target]?.node;
+    if (!s || !t) return;
+
+    let alpha = 0.12;
+    if (selectedNode) {
+      if (e.source === selectedNode.id || e.target === selectedNode.id) alpha = 0.85;
+      else alpha = 0.02;
+    }
+    if (hoveredNode && !selectedNode) {
+      if (e.source === hoveredNode.id || e.target === hoveredNode.id) alpha = 0.7;
+    }
+
+    ctx.beginPath();
+    ctx.moveTo(s.x, s.y);
+    ctx.lineTo(t.x, t.y);
+    ctx.strokeStyle = e.color + Math.round(alpha * 255).toString(16).padStart(2, '0');
+    ctx.lineWidth = alpha > 0.5 ? 2 : 0.5;
+    ctx.stroke();
+
+    // Arrow for highlighted edges
+    if (alpha > 0.5) {
+      const dx = t.x - s.x, dy = t.y - s.y;
+      const d = Math.sqrt(dx * dx + dy * dy);
+      if (d > 0) {
+        const ax = t.x - dx / d * (t.radius + 5), ay = t.y - dy / d * (t.radius + 5);
+        const ang = Math.atan2(dy, dx);
+        ctx.beginPath();
+        ctx.moveTo(ax, ay);
+        ctx.lineTo(ax - 8 * Math.cos(ang - 0.4), ay - 8 * Math.sin(ang - 0.4));
+        ctx.lineTo(ax - 8 * Math.cos(ang + 0.4), ay - 8 * Math.sin(ang + 0.4));
+        ctx.closePath();
+        ctx.fillStyle = e.color + 'cc';
+        ctx.fill();
+      }
+    }
+  });
+
+  // Depth guides (vertical lines for tree depth levels)
+  if (transform.k > 0.15 && transform.k < 1.5) {
+    ctx.font = "bold 14px 'Segoe UI', sans-serif";
+    ctx.textAlign = 'center';
+    ctx.fillStyle = 'rgba(100,116,139,0.2)';
+    const depths = ['Ch5', '5.x', '5.x.x', '5.x.x.x', '5.x.x.x.x'];
+    for (let d = 0; d < 5; d++) {
+      const x = d * 250 + 100;
+      ctx.fillText(depths[d], x, 40);
+    }
+  }
+
+  // Nodes
+  nodes.forEach(n => {
+    if (!isNodeVisible(n)) return;
+    let alpha = 1;
+    let r = n.radius;
+    if (selectedNode) {
+      const connected = isConnected(selectedNode.id, n.id);
+      if (n === selectedNode) { alpha = 1; r += 3; }
+      else if (connected) alpha = 0.9;
+      else alpha = 0.08;
+    }
+
+    // Glow
+    if (n === hoveredNode || n === selectedNode) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, r + 5, 0, Math.PI * 2);
+      ctx.fillStyle = n.color + '44';
+      ctx.fill();
+    }
+
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = n.color + Math.round(alpha * 255).toString(16).padStart(2, '0');
+    ctx.fill();
+
+    // Labels
+    const showLabel = (r >= 9 && transform.k > 0.25) || n === selectedNode || n === hoveredNode || transform.k > 0.8;
+    if (showLabel && alpha > 0.07) {
+      const fontSize = Math.max(8, Math.min(13, 11 / transform.k * 0.5));
+      ctx.font = `${fontSize}px 'Segoe UI', sans-serif`;
+      ctx.fillStyle = `rgba(224,224,224,${alpha * 0.9})`;
+      ctx.textAlign = 'center';
+      const label = n.section ? n.section : (n.label.length > 28 ? n.label.slice(0, 25) + '...' : n.label);
+      ctx.fillText(label, n.x, n.y - r - 4);
+    }
+  });
+
+  ctx.restore();
+}
+
+function isConnected(id1, id2) {
+  if (id1 === id2) return true;
+  return edges.some(e =>
+    (e.source === id1 && e.target === id2) || (e.source === id2 && e.target === id1)
+  );
+}
+
+// ========== INTERACTION ==========
+function screenToWorld(sx, sy) {
+  return { x: (sx - transform.x) / transform.k, y: (sy - transform.y) / transform.k };
+}
+
+function findNodeAt(sx, sy) {
+  const { x, y } = screenToWorld(sx, sy);
+  let closest = null, minD = Infinity;
+  for (const n of nodes) {
+    if (!isNodeVisible(n)) continue;
+    const d = Math.sqrt((n.x - x) ** 2 + (n.y - y) ** 2);
+    if (d < n.radius + 5 / transform.k && d < minD) { closest = n; minD = d; }
+  }
+  return closest;
+}
+
+canvas.addEventListener('mousedown', e => {
+  const rect = canvas.getBoundingClientRect();
+  const sx = e.clientX - rect.left, sy = e.clientY - rect.top;
+  const node = findNodeAt(sx, sy);
+  if (node) {
+    dragging = node;
+    dragStart = { x: sx, y: sy, nx: node.x, ny: node.y };
+  } else {
+    isPanning = true;
+    panStart = { x: sx - transform.x, y: sy - transform.y };
+  }
+});
+
+canvas.addEventListener('mousemove', e => {
+  const rect = canvas.getBoundingClientRect();
+  const sx = e.clientX - rect.left, sy = e.clientY - rect.top;
+
+  if (dragging) {
+    const w = screenToWorld(sx, sy);
+    dragging.x = w.x;
+    dragging.y = w.y;
+    needsRedraw = true;
+  } else if (isPanning) {
+    transform.x = sx - panStart.x;
+    transform.y = sy - panStart.y;
+    needsRedraw = true;
+  } else {
+    const prev = hoveredNode;
+    hoveredNode = findNodeAt(sx, sy);
+    canvas.style.cursor = hoveredNode ? 'pointer' : 'grab';
+    if (hoveredNode !== prev) needsRedraw = true;
+    showTooltip(hoveredNode, e.clientX, e.clientY);
+  }
+});
+
+canvas.addEventListener('mouseup', e => {
+  if (dragging && dragStart) {
+    const rect = canvas.getBoundingClientRect();
+    const sx = e.clientX - rect.left, sy = e.clientY - rect.top;
+    const moved = Math.abs(sx - dragStart.x) + Math.abs(sy - dragStart.y);
+    if (moved < 5) { selectNode(dragging); needsRedraw = true; }
+  } else if (isPanning) {
+    const rect = canvas.getBoundingClientRect();
+    const sx = e.clientX - rect.left, sy = e.clientY - rect.top;
+    if (panStart && Math.abs(sx - (panStart.x + transform.x)) + Math.abs(sy - (panStart.y + transform.y)) < 5) {
+      selectNode(null); needsRedraw = true;
+    }
+  }
+  dragging = null; dragStart = null;
+  isPanning = false; panStart = null;
+});
+
+canvas.addEventListener('wheel', e => {
+  e.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  const sx = e.clientX - rect.left, sy = e.clientY - rect.top;
+  const delta = e.deltaY > 0 ? 0.9 : 1.1;
+  const newK = Math.max(0.05, Math.min(5, transform.k * delta));
+  transform.x = sx - (sx - transform.x) * (newK / transform.k);
+  transform.y = sy - (sy - transform.y) * (newK / transform.k);
+  transform.k = newK;
+  needsRedraw = true;
+}, { passive: false });
+
+// Tooltip
+function showTooltip(node, mx, my) {
+  const tip = document.getElementById('tooltip');
+  if (!node) { tip.style.display = 'none'; return; }
+  tip.style.display = 'block';
+  tip.style.left = (mx + 12) + 'px';
+  tip.style.top = (my + 12) + 'px';
+  tip.innerHTML = `
+    <div class="tt-title">${node.label}</div>
+    <div class="tt-type">${node.type}${node.section ? ' | ' + node.section : ''}</div>
+    ${node.description ? `<div class="tt-desc">${node.description}</div>` : ''}
+  `;
+}
+
+// Select node
+function selectNode(node) {
+  selectedNode = node;
+  needsRedraw = true;
+  const detail = document.getElementById('detail');
+  if (!node) {
+    detail.innerHTML = '<div style="color:#64748b;padding:20px 0;text-align:center;">Click a node to see details</div>';
+    return;
+  }
+  const info = nodeMap[node.id];
+  const outEdges = edges.filter(e => e.source === node.id && isEdgeVisible(e));
+  const inEdges = edges.filter(e => e.target === node.id && isEdgeVisible(e));
+
+  let html = `<h3 style="color:${node.color}">${node.label}</h3>`;
+  html += `<div class="field"><span class="field-label">ID:</span> <span class="field-value">${node.id}</span></div>`;
+  html += `<div class="field"><span class="field-label">Type:</span> <span class="field-value">${node.type}</span></div>`;
+  if (node.section) html += `<div class="field"><span class="field-label">Section:</span> <span class="field-value">${node.section}</span></div>`;
+  if (node.description) html += `<div class="field"><span class="field-label">Description:</span> <span class="field-value">${node.description}</span></div>`;
+  html += `<div class="field"><span class="field-label">Connections:</span> <span class="field-value">${info?.edgeCount || 0}</span></div>`;
+
+  if (outEdges.length) {
+    html += `<div class="connections"><h4 style="color:#64748b;font-size:11px;margin:8px 0 4px;">Outgoing (${outEdges.length})</h4>`;
+    outEdges.forEach(e => {
+      const t = nodeMap[e.target]?.node;
+      if (t) html += `<div class="conn-item" onclick="focusNode('${t.id}')"><span class="conn-type">${e.type} &rarr;</span> <span class="conn-label">${t.label.slice(0, 40)}</span></div>`;
+    });
+    html += '</div>';
+  }
+  if (inEdges.length) {
+    html += `<div class="connections"><h4 style="color:#64748b;font-size:11px;margin:8px 0 4px;">Incoming (${inEdges.length})</h4>`;
+    inEdges.forEach(e => {
+      const s = nodeMap[e.source]?.node;
+      if (s) html += `<div class="conn-item" onclick="focusNode('${s.id}')"><span class="conn-type">${e.type} &larr;</span> <span class="conn-label">${s.label.slice(0, 40)}</span></div>`;
+    });
+    html += '</div>';
+  }
+  detail.innerHTML = html;
+}
+
+function focusNode(id) {
+  const n = nodeMap[id]?.node;
+  if (!n) return;
+  selectNode(n);
+  const W = canvas.width / window.devicePixelRatio;
+  const H = canvas.height / window.devicePixelRatio;
+  transform.x = W / 2 - n.x * transform.k;
+  transform.y = H / 2 - n.y * transform.k;
+  needsRedraw = true;
+}
+
+// Search
+document.getElementById('search').addEventListener('input', e => {
+  const q = e.target.value.toLowerCase();
+  if (!q) { selectNode(null); return; }
+  const found = nodes.find(n => isNodeVisible(n) && (
+    n.id.toLowerCase().includes(q) ||
+    n.label.toLowerCase().includes(q) ||
+    (n.section && n.section.toLowerCase().includes(q))
+  ));
+  if (found) focusNode(found.id);
+});
+
+// Zoom controls
+document.getElementById('zoomIn').onclick = () => {
+  const W = canvas.width / window.devicePixelRatio / 2;
+  const H = canvas.height / window.devicePixelRatio / 2;
+  const nk = Math.min(5, transform.k * 1.3);
+  transform.x = W - (W - transform.x) * (nk / transform.k);
+  transform.y = H - (H - transform.y) * (nk / transform.k);
+  transform.k = nk;
+  needsRedraw = true;
+};
+document.getElementById('zoomOut').onclick = () => {
+  const W = canvas.width / window.devicePixelRatio / 2;
+  const H = canvas.height / window.devicePixelRatio / 2;
+  const nk = Math.max(0.05, transform.k * 0.7);
+  transform.x = W - (W - transform.x) * (nk / transform.k);
+  transform.y = H - (H - transform.y) * (nk / transform.k);
+  transform.k = nk;
+  needsRedraw = true;
+};
+document.getElementById('resetView').onclick = () => {
+  transform = { x: 20, y: 20, k: 0.25 };
+  selectedNode = null; hoveredNode = null;
+  selectNode(null);
+  needsRedraw = true;
+};
+
+// ========== FILTERS ==========
+function buildFilters() {
+  const filtersEl = document.getElementById('filters');
+  const typeGroups = {};
+  nodes.forEach(n => {
+    if (!typeGroups[n.type]) typeGroups[n.type] = { count: 0, color: n.color };
+    typeGroups[n.type].count++;
+  });
+
+  let html = '<h3>Node Types</h3>';
+  Object.entries(typeGroups).sort((a, b) => b[1].count - a[1].count).forEach(([type, info]) => {
+    html += `<div class="filter-item" data-type="${type}" onclick="toggleNodeType('${type}', this)">
+      <span class="filter-dot" style="background:${info.color}"></span>
+      <span>${type}</span>
+      <span class="filter-count">${info.count}</span>
+    </div>`;
+  });
+  filtersEl.innerHTML = html;
+
+  const edgeEl = document.getElementById('edgeFilters');
+  const edgeGroups = {};
+  edges.forEach(e => {
+    if (!edgeGroups[e.type]) edgeGroups[e.type] = { count: 0, color: e.color };
+    edgeGroups[e.type].count++;
+  });
+  let ehtml = '<h3>Edge Types</h3>';
+  Object.entries(edgeGroups).sort((a, b) => b[1].count - a[1].count).forEach(([type, info]) => {
+    ehtml += `<div class="edge-filter-item" data-type="${type}" onclick="toggleEdgeType('${type}', this)">
+      <span class="edge-line" style="background:${info.color}"></span>
+      <span>${type}</span>
+      <span class="filter-count">${info.count}</span>
+    </div>`;
+  });
+  edgeEl.innerHTML = ehtml;
+}
+
+function toggleNodeType(type, el) {
+  if (disabledNodeTypes.has(type)) { disabledNodeTypes.delete(type); el.classList.remove('disabled'); }
+  else { disabledNodeTypes.add(type); el.classList.add('disabled'); }
+  needsRedraw = true;
+}
+function toggleEdgeType(type, el) {
+  if (disabledEdgeTypes.has(type)) { disabledEdgeTypes.delete(type); el.classList.remove('disabled'); }
+  else { disabledEdgeTypes.add(type); el.classList.add('disabled'); }
+  needsRedraw = true;
+}
+
+function buildStats() {
+  document.getElementById('stats').innerHTML = `
+    <div class="row"><span>Nodes</span><span class="val">${nodes.length}</span></div>
+    <div class="row"><span>Edges</span><span class="val">${edges.length}</span></div>
+    <div class="row"><span>Node Types</span><span class="val">${new Set(nodes.map(n => n.type)).size}</span></div>
+    <div class="row"><span>Edge Types</span><span class="val">${new Set(edges.map(e => e.type)).size}</span></div>
+  `;
+}
+
+// ========== RENDER LOOP (only redraws when needed) ==========
+function loop() {
+  if (needsRedraw) { draw(); needsRedraw = false; }
+  requestAnimationFrame(loop);
+}
+
+// ========== INIT ==========
+async function init() {
+  resize();
+  window.addEventListener('resize', resize);
+
+  const resp = await fetch('owl_graph_data.json');
+  DATA = await resp.json();
+  nodes = DATA.nodes;
+  edges = DATA.edges;
+
+  buildNodeMap();
+  initPositions();
+  buildFilters();
+  buildStats();
+
+  // Fit view to show the tree
+  transform = { x: 20, y: 20, k: 0.25 };
+
+  needsRedraw = true;
+  loop();
+}
+
+init();
+</script>
+</body>
+</html>

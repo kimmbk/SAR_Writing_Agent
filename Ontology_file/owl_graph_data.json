@@ -1,0 +1,7336 @@
+{
+  "nodes": [
+    {
+      "id": "sec_5_3_2",
+      "label": "Pressure-Temperature Limits, Pressurized Thermal Shock, and Charpy Upper-Shelf Energy Data",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.2",
+      "description": "P-T operating limits derivation, PTS screening, USE requirements"
+    },
+    {
+      "id": "cond_5_2_4_isiCompliance",
+      "label": "ISI Program Compliance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_1_2",
+      "label": "Design Description",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1.2",
+      "description": "SG requirement: Design Description"
+    },
+    {
+      "id": "dp_ventDesign",
+      "label": "High-Point Vent Design",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4",
+      "label": "Reactor Coolant System Component and Subsystem Design",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4",
+      "description": "Major RCS component and connected subsystem design details"
+    },
+    {
+      "id": "tbl_5_2_5",
+      "label": "Table 5.2-5: Primary Water Chemistry Controls",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_97",
+      "label": "RG 1.97: Criteria for Accident Monitoring Instrumentation",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_4_3_dhrsPerf",
+      "label": "DHRS Performance Evaluation",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3",
+      "label": "Decay Heat Removal System",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3",
+      "description": "DHRS design bases, description, performance evaluation, and testing"
+    },
+    {
+      "id": "item_5_4_5_przDesign",
+      "label": "Pressurizer Design",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "ThermalParameter",
+      "label": "ThermalParameter",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "sec_5_1",
+      "label": "Summary Description",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.1",
+      "description": "Overall RCS design description and architecture summary"
+    },
+    {
+      "id": "ch5",
+      "label": "Chapter 5: Reactor Coolant System and Connected Systems",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5",
+      "description": "Complete chapter covering RCS design, RCPB integrity, reactor vessel, and component design"
+    },
+    {
+      "id": "sec_5_3_3",
+      "label": "Reactor Vessel Integrity",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3",
+      "description": "RPV design, fabrication, inspection, operating conditions, and surveillance"
+    },
+    {
+      "id": "comp_ReliefValves",
+      "label": "Safety/Relief Valves",
+      "type": "Valve",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "RCPB overpressure protection valves (RSV, RVV, or equivalent)"
+    },
+    {
+      "id": "cond_5_1_przControl",
+      "label": "Pressurizer Control Adequacy",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_4_1",
+      "label": "Table 5.4-1: SG Thermal-Hydraulic Operating Conditions",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_XI_AppG",
+      "label": "ASME Section XI Appendix G",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "col_5_4_1",
+      "label": "COL Item 5.4-1",
+      "type": "COLItem",
+      "color": "#C0392B",
+      "group": 10,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_3_7",
+      "label": "Table 5.3-7: P-T Limit Data",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_1",
+      "label": "Steam Generators",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1",
+      "description": "SG design, performance analysis, materials, degradation assessment, ISI program"
+    },
+    {
+      "id": "sec_5_4_5_1",
+      "label": "Design Bases",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.5.1",
+      "description": "Pressurizer requirement: Design Bases"
+    },
+    {
+      "id": "tbl_5_2_10",
+      "label": "Table 5.2-10: Containment ISI Examination Elements",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_6",
+      "label": "References",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.6",
+      "description": "Section 5.4 references list"
+    },
+    {
+      "id": "sec_5_4_1_6",
+      "label": "Steam Generator Program",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1.6",
+      "description": "SG requirement: Steam Generator Program"
+    },
+    {
+      "id": "item_5_3_3_integrity",
+      "label": "RPV Design and Integrity Evaluation",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_4",
+      "label": "Reactor Coolant System High-Point Vents",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.4",
+      "description": "High-point vent design for non-condensible gas removal per TMI requirements"
+    },
+    {
+      "id": "cond_5_4_1_sgIntegrity",
+      "label": "SG Tube Integrity",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_leakageLimits",
+      "label": "Leakage Rate Limits",
+      "type": "FlowParameter",
+      "color": "#2D9850",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_4_6",
+      "label": "Table 5.4-6: Pressurizer Design Data",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_2_1_codeAccept",
+      "label": "ASME Code Edition Acceptability",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "Pressurizer",
+      "label": "Pressurizer",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "sec_5_4_5",
+      "label": "Pressurizer",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.5",
+      "description": "Pressurizer design, heaters, spray, relief system, and instrumentation"
+    },
+    {
+      "id": "cond_5_3_3_integrityEval",
+      "label": "RPV Integrity Evaluation",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "comp_Pressurizer",
+      "label": "Pressurizer Assembly",
+      "type": "Pressurizer",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "Pressurizer for RCS pressure control (integral or external per design)"
+    },
+    {
+      "id": "tbl_5_4_7",
+      "label": "Table 5.4-7: Pressurizer Heater Parameters",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_4_1_sgProgram",
+      "label": "SG Program Compliance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "comp_SG",
+      "label": "Steam Generator(s)",
+      "type": "SteamGenerator",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "Steam generator assembly (type per SMR design)"
+    },
+    {
+      "id": "cond_5_4_3_dhrsCapability",
+      "label": "DHRS Heat Removal Capability",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_5_3",
+      "label": "Design Evaluation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.5.3",
+      "description": "Pressurizer requirement: Design Evaluation"
+    },
+    {
+      "id": "sec_5_3_1",
+      "label": "Reactor Vessel Materials",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1",
+      "description": "RPV base metal, weld metal, cladding, bolting material specifications and controls"
+    },
+    {
+      "id": "std_GDC32",
+      "label": "GDC 32: Inspection of Reactor Coolant Pressure Boundary",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_3_2_ptLimits",
+      "label": "P-T Limit Curves",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_OM",
+      "label": "ASME OM Code",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_fractureToughness",
+      "label": "RPV Fracture Toughness",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "col_5_2_7",
+      "label": "COL Item 5.2-7",
+      "type": "COLItem",
+      "color": "#C0392B",
+      "group": 10,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_1_dhrs",
+      "label": "Decay Heat Removal Description",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_5",
+      "label": "Reactor Coolant Pressure Boundary Leakage Detection",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5",
+      "description": "Leakage detection methods, instrumentation, identified/unidentified leakage limits"
+    },
+    {
+      "id": "dp_isiScope",
+      "label": "ISI Examination Scope",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_4_4",
+      "label": "Table 5.4-4: DHRS Component Design Data",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_3_2_ptCompliance",
+      "label": "P-T Limits Compliance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_2_3_sccResistance",
+      "label": "SCC Resistance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_4_1",
+      "label": "Design Bases",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.4.1",
+      "description": "High-point vent requirement: Design Bases"
+    },
+    {
+      "id": "tbl_5_3_10",
+      "label": "Table 5.3-10: Upper-Shelf Energy Projections",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_majorComponents",
+      "label": "Major RCS Components List",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2",
+      "label": "Integrity of Reactor Coolant Pressure Boundary",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2",
+      "description": "RCPB design codes, overpressure protection, materials, ISI, and leakage detection"
+    },
+    {
+      "id": "comp_RPV",
+      "label": "Reactor Pressure Vessel",
+      "type": "ReactorPressureVessel",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "RPV assembly housing reactor core and internals"
+    },
+    {
+      "id": "Pump",
+      "label": "Pump",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "comp_RCSPiping",
+      "label": "RCS Piping Assembly",
+      "type": "Piping",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "Primary coolant piping (hot leg, cold leg, or integral flow paths)"
+    },
+    {
+      "id": "sec_5_3_3_5",
+      "label": "Shipment and Installation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.5",
+      "description": "RPV integrity requirement: Shipment and Installation"
+    },
+    {
+      "id": "dp_dhrsCapacity",
+      "label": "DHRS Heat Removal Capacity",
+      "type": "ThermalParameter",
+      "color": "#3DA85E",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC35",
+      "label": "GDC 35: Emergency Core Cooling",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_2",
+      "label": "Reactor Coolant System Piping",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.2",
+      "description": "RCS piping design, stress analysis, materials, and ISI"
+    },
+    {
+      "id": "tbl_5_3_8",
+      "label": "Table 5.3-8: Adjusted RT_NDT Values",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_3_2",
+      "label": "Single Failure Analysis",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.3.2",
+      "description": "DHRS performance: Single Failure Analysis"
+    },
+    {
+      "id": "dp_rcsDesignPressure",
+      "label": "RCS Design Pressure",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_100",
+      "label": "RG 1.100: Seismic Qualification of Electric and Mechanical Equipment",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_1",
+      "label": "Design Bases",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.1",
+      "description": "DHRS requirement: Design Bases"
+    },
+    {
+      "id": "cond_5_2_2_reliefCapacity",
+      "label": "Relief System Capacity",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_10CFR20_1406",
+      "label": "10 CFR 20.1406",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sys_DHRS",
+      "label": "Decay Heat Removal System (DHRS)",
+      "type": "System",
+      "color": "#8E44AD",
+      "group": 5,
+      "section": "",
+      "description": "Passive decay heat removal system connected to SG secondary side"
+    },
+    {
+      "id": "dp_przDesignPressure",
+      "label": "Pressurizer Design Pressure",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_2_1_designMethod",
+      "label": "Design Methodology Adequacy",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_5_6",
+      "label": "Identified Leakage Inside Containment",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5.6",
+      "description": "Detailed requirements for identified leakage inside containment"
+    },
+    {
+      "id": "tbl_5_2_6",
+      "label": "Table 5.2-6: RCPB Class 1 ISI Examination Elements",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_3_1_fractureToughness",
+      "label": "RPV Fracture Toughness",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_4_3",
+      "label": "Design Evaluation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.4.3",
+      "description": "High-point vent requirement: Design Evaluation"
+    },
+    {
+      "id": "dp_sgPluggingCriteria",
+      "label": "SG Plugging Criteria",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_4_1_sgProgram",
+      "label": "Steam Generator Program",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "fig_5_2_2",
+      "label": "Figure 5.2-2: RSV/RVV Arrangement",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "Document",
+      "label": "Document",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "item_5_2_5_methods",
+      "label": "Leakage Detection Methods and Instrumentation",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_3_1_materialSpec",
+      "label": "RPV Material Acceptability",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_1_4",
+      "label": "Special Controls for Ferritic Steels and Austenitic Stainless Steels",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1.4",
+      "description": "RPV material requirement: Special Controls for Ferritic Steels and Austenitic Stainless Steels"
+    },
+    {
+      "id": "Standard",
+      "label": "Standard",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "System",
+      "label": "System",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "cond_5_2_3_chemistryControl",
+      "label": "Water Chemistry Control",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_3",
+      "label": "Reactor Coolant Pressure Boundary Materials",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.3",
+      "description": "RCPB material specifications, compatibility, fabrication, SCC resistance"
+    },
+    {
+      "id": "std_10CFR50_62",
+      "label": "10 CFR 50.62(c)(1)",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_2_1",
+      "label": "Limit Curves",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.2.1",
+      "description": "P-T limit requirement: Limit Curves"
+    },
+    {
+      "id": "sec_5_4_4_2",
+      "label": "System Design",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.4.2",
+      "description": "High-point vent requirement: System Design"
+    },
+    {
+      "id": "cond_5_4_2_pipingDesign",
+      "label": "RCS Piping Design Adequacy",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_1",
+      "label": "Compliance with Codes and Standards",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.1",
+      "description": "ASME BPVC edition, code cases, design/fabrication/testing practices"
+    },
+    {
+      "id": "dp_pipingMaterial",
+      "label": "RCS Piping Material",
+      "type": "MaterialSpec",
+      "color": "#6BC882",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "comp_DHRSValves",
+      "label": "DHRS Actuation Valves",
+      "type": "Valve",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "DHRS isolation/actuation valves (fail-safe design)"
+    },
+    {
+      "id": "InformationItem",
+      "label": "InformationItem",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "tbl_5_4_3",
+      "label": "Table 5.4-3: SG Component Materials",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_pipingDesignPressure",
+      "label": "RCS Piping Design Pressure",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_2_3_materials",
+      "label": "RCPB Material Specifications",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_1_7",
+      "label": "Reactor Vessel Fasteners",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1.7",
+      "description": "RPV material requirement: Reactor Vessel Fasteners"
+    },
+    {
+      "id": "std_GDC5",
+      "label": "GDC 5: Sharing of Structures, Systems, and Components",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_4_4_ventDesign",
+      "label": "RCS High-Point Vent Design",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_65",
+      "label": "RG 1.65: Materials and Inspections for Reactor Vessel Closure Studs",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_3_1_fracture",
+      "label": "RPV Fracture Toughness Data",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_2_5_leakageLimits",
+      "label": "Leakage Limits Compliance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_3_6",
+      "label": "Table 5.3-6: RPV Surveillance Capsule Locations",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_1_5",
+      "label": "Fracture Toughness",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1.5",
+      "description": "RPV material requirement: Fracture Toughness"
+    },
+    {
+      "id": "sec_5_3_4",
+      "label": "References",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.4",
+      "description": "Section 5.3 references list"
+    },
+    {
+      "id": "comp_HighPointVent",
+      "label": "High-Point Vent System",
+      "type": "Valve",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "Non-condensible gas vent valves per TMI requirements"
+    },
+    {
+      "id": "tbl_5_2_8",
+      "label": "Table 5.2-8: Pressure Testing Elements (Class 1)",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_20",
+      "label": "RG 1.20: Comprehensive Vibration Assessment Program for Reactor Internals",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_10CFR50_34f",
+      "label": "10 CFR 50.34(f)",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_1_rcsDesign",
+      "label": "RCS Design Overview",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_2_4_isi",
+      "label": "RCPB Inservice Inspection Program",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "ReactorPressureVessel",
+      "label": "ReactorPressureVessel",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "cond_5_1_configReq",
+      "label": "RCS Configuration Requirements",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "SteamGenerator",
+      "label": "SteamGenerator",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "cond_5_2_3_materialCompliance",
+      "label": "RCPB Material Compliance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_4_3_dhrsDesign",
+      "label": "DHRS System Design",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_1_dhrsCapability",
+      "label": "Decay Heat Removal Capability",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_3_2",
+      "label": "Materials of Construction",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.2",
+      "description": "RPV integrity requirement: Materials of Construction"
+    },
+    {
+      "id": "sec_5_3_1_2",
+      "label": "Special Processes for Manufacturing and Fabrication",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1.2",
+      "description": "RPV material requirement: Special Processes for Manufacturing and Fabrication"
+    },
+    {
+      "id": "comp_LeakageDetectors",
+      "label": "Leakage Detection Instruments",
+      "type": "Instrument",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "Containment atmosphere monitors, sump level sensors, radiation monitors for RG 1.45"
+    },
+    {
+      "id": "GeneralDesignCriterion",
+      "label": "GeneralDesignCriterion",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "cond_5_4_1_sgPerformance",
+      "label": "SG Thermal-Hydraulic Performance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_rpvMaterial",
+      "label": "RPV Base Metal Material",
+      "type": "MaterialSpec",
+      "color": "#6BC882",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_1_1",
+      "label": "Design Bases",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1.1",
+      "description": "SG requirement: Design Bases"
+    },
+    {
+      "id": "cond_5_3_1_surveillance",
+      "label": "RPV Surveillance Program",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_XI",
+      "label": "ASME BPVC Section XI",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_overpressure",
+      "label": "Overpressure Protection Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_4",
+      "label": "Inservice Inspection and Testing of RCPB",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.4",
+      "description": "ASME Section XI ISI program, inspection elements, accessibility"
+    },
+    {
+      "id": "item_5_4_1_sgDesign",
+      "label": "Steam Generator Design and Performance",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC15",
+      "label": "GDC 15: Reactor Coolant System Design",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_rsvSetpoint",
+      "label": "RSV Setpoint Pressure",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_5_1",
+      "label": "Leakage Detection Methods",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5.1",
+      "description": "Detailed requirements for leakage detection methods"
+    },
+    {
+      "id": "item_5_2_2_reliefDesign",
+      "label": "Overpressure Protection System Design",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_3_1",
+      "label": "Design Basis Events",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.3.1",
+      "description": "DHRS performance: Design Basis Events"
+    },
+    {
+      "id": "dp_przVolume",
+      "label": "Pressurizer Volume",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_1_6_1",
+      "label": "Degradation Assessment",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1.6.1",
+      "description": "SG tube degradation mechanisms and assessment methodology"
+    },
+    {
+      "id": "dp_rpvFluence",
+      "label": "RPV Neutron Fluence",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "fig_5_4_1",
+      "label": "Figure 5.4-1: SG Arrangement Drawing",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_3_2_useRequirement",
+      "label": "Upper-Shelf Energy Requirement",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_1_1",
+      "label": "Material Specifications",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1.1",
+      "description": "RPV material requirement: Material Specifications"
+    },
+    {
+      "id": "dp_leakageDetection",
+      "label": "Leakage Detection Methods",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC4",
+      "label": "GDC 4: Environmental and Dynamic Effects Design Bases",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_4_4",
+      "label": "Testing and Inspection",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.4.4",
+      "description": "High-point vent requirement: Testing and Inspection"
+    },
+    {
+      "id": "item_5_2_1_codeEdition",
+      "label": "ASME Code Compliance Commitment",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_pressurizerVolume",
+      "label": "Pressurizer Volume (legacy)",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sys_RCS",
+      "label": "Reactor Coolant System (RCS)",
+      "type": "System",
+      "color": "#8E44AD",
+      "group": 5,
+      "section": "",
+      "description": "Primary system containing reactor core, coolant, pressure boundary components"
+    },
+    {
+      "id": "dp_dhrsHeatRemovalRate",
+      "label": "DHRS Time-Dependent Heat Removal",
+      "type": "ThermalParameter",
+      "color": "#3DA85E",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_1_4",
+      "label": "Inspection and Testing",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1.4",
+      "description": "SG requirement: Inspection and Testing"
+    },
+    {
+      "id": "fig_5_3_1",
+      "label": "Figure 5.3-1: RPV General Arrangement",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_useEnergy",
+      "label": "Upper-Shelf Energy",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "RegulatoryGuide",
+      "label": "RegulatoryGuide",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "dp_rcsLayout",
+      "label": "RCS Layout Configuration",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_2_5",
+      "label": "Instrumentation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.2.5",
+      "description": "RCS piping requirement: Instrumentation"
+    },
+    {
+      "id": "std_10CFR50_AppH",
+      "label": "10 CFR 50 Appendix H",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_3_2_use",
+      "label": "Upper-Shelf Energy Data",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_fracture",
+      "label": "Fracture Toughness Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC33",
+      "label": "GDC 33: Reactor Coolant Makeup",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_4_8",
+      "label": "Table 5.4-8: DHRS Failure Modes and Effects Analysis",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_4_2_piping",
+      "label": "RCS Piping Design",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_5_3",
+      "label": "Indication in Control Room",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5.3",
+      "description": "Detailed requirements for indication in control room"
+    },
+    {
+      "id": "cond_5_4_4_ventCapability",
+      "label": "High-Point Vent Capability",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_rcsConfig",
+      "label": "RCS Configuration Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_isiAccessibility",
+      "label": "ISI Accessibility Provisions",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_2_4",
+      "label": "Upper-Shelf Energy",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.2.4",
+      "description": "P-T limit requirement: Upper-Shelf Energy"
+    },
+    {
+      "id": "fig_5_3_2",
+      "label": "Figure 5.3-2: RPV Surveillance Capsule Locations",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_sgHeatTransfer",
+      "label": "SG Heat Transfer Capacity",
+      "type": "ThermalParameter",
+      "color": "#3DA85E",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_VIII",
+      "label": "ASME Section VIII Div 1",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_ptLimits",
+      "label": "P-T Limits Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "MaterialSpec",
+      "label": "MaterialSpec",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "std_RG_1_44",
+      "label": "RG 1.44: Control of the Processing and Use of Stainless Steel",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_3_2",
+      "label": "Table 5.3-2: Reactor Vessel Material Specifications",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3",
+      "label": "Reactor Vessel",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3",
+      "description": "RPV design, materials, P-T limits, and integrity evaluation"
+    },
+    {
+      "id": "review_przRelief",
+      "label": "Pressurizer Relief Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_dhrsDbe",
+      "label": "DHRS DBE Performance Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_3_3",
+      "label": "Fabrication Methods",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.3",
+      "description": "RPV integrity requirement: Fabrication Methods"
+    },
+    {
+      "id": "tbl_5_3_4",
+      "label": "Table 5.3-4: RPV Material Chemistry Data",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_4_5",
+      "label": "Table 5.4-5: DHRS Design Data",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_5_2",
+      "label": "Leakage Detection Instrumentation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5.2",
+      "description": "Detailed requirements for leakage detection instrumentation"
+    },
+    {
+      "id": "sys_ECCS",
+      "label": "Emergency Core Cooling System (ECCS)",
+      "type": "System",
+      "color": "#8E44AD",
+      "group": 5,
+      "section": "",
+      "description": "Emergency reactor vessel injection via RVVs and RRVs"
+    },
+    {
+      "id": "fig_5_4_2",
+      "label": "Figure 5.4-2: DHRS Flow Diagram",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sys_CES",
+      "label": "Containment Evacuation System (CES)",
+      "type": "System",
+      "color": "#8E44AD",
+      "group": 5,
+      "section": "",
+      "description": "Containment atmosphere monitoring and leakage detection support"
+    },
+    {
+      "id": "cond_5_4_3_singleFailure",
+      "label": "DHRS Single Failure Criterion",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "IndustryCode",
+      "label": "IndustryCode",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "sec_5_3_3_7",
+      "label": "Inservice Surveillance",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.7",
+      "description": "RPV integrity requirement: Inservice Surveillance"
+    },
+    {
+      "id": "sec_5_4_5_5",
+      "label": "Instrumentation Requirements",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.5.5",
+      "description": "Pressurizer requirement: Instrumentation Requirements"
+    },
+    {
+      "id": "review_dhrsPassive",
+      "label": "DHRS Passive Operation Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_4_3_eqQual",
+      "label": "DHRS Equipment Qualification",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_materialCompl",
+      "label": "RCPB Material Compliance Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "fig_5_1_1",
+      "label": "Figure 5.1-1: RCS Flow Diagram",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_4",
+      "label": "Tests and Inspections",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.4",
+      "description": "DHRS requirement: Tests and Inspections"
+    },
+    {
+      "id": "DesignParameter",
+      "label": "DesignParameter",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "sec_5_2_5_5",
+      "label": "Unidentified Leakage Inside Containment",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5.5",
+      "description": "Detailed requirements for unidentified leakage inside containment"
+    },
+    {
+      "id": "sec_5_3_3_4",
+      "label": "Inspection Requirements",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.4",
+      "description": "RPV integrity requirement: Inspection Requirements"
+    },
+    {
+      "id": "sec_5_4_3_3",
+      "label": "Performance Evaluation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.3",
+      "description": "DHRS requirement: Performance Evaluation"
+    },
+    {
+      "id": "item_5_1_inventory",
+      "label": "RCS Inventory and Pressurization",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_3_1_materials",
+      "label": "RPV Material Specifications",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC10",
+      "label": "GDC 10: Reactor Design",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_2",
+      "label": "Overpressure Protection",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.2",
+      "description": "RSV/RVV design, LTOP system, pressure transient analysis"
+    },
+    {
+      "id": "dp_crdmMaterial",
+      "label": "CRDM Nozzle Material",
+      "type": "MaterialSpec",
+      "color": "#6BC882",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_3_9",
+      "label": "Table 5.3-9: PTS Screening Results",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "item_5_2_1_fabrication",
+      "label": "Design and Fabrication Practices",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_2_2",
+      "label": "Operating Procedures",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.2.2",
+      "description": "P-T limit requirement: Operating Procedures"
+    },
+    {
+      "id": "dp_rpvFastenerMaterial",
+      "label": "RPV Fastener Material",
+      "type": "MaterialSpec",
+      "color": "#6BC882",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_1_dbeAccom",
+      "label": "Design Basis Event Accommodation",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "RegulatoryFramework",
+      "label": "RegulatoryFramework",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "sec_5_2_5_4",
+      "label": "Limits for Reactor Coolant Leakage",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5.4",
+      "description": "Detailed requirements for limits for reactor coolant leakage"
+    },
+    {
+      "id": "cond_5_2_5_detectionCapability",
+      "label": "Leakage Detection Capability",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_2_2_overpressureMargin",
+      "label": "Overpressure Margin",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_45",
+      "label": "RG 1.45: Guidance on Monitoring and Responding to Reactor Coolant System Leakage",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "ChemistryParameter",
+      "label": "ChemistryParameter",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "dp_ptLimits",
+      "label": "P-T Limit Curves",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_IEEE_344",
+      "label": "IEEE 344-2004",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "FederalRegulation",
+      "label": "FederalRegulation",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "item_5_2_3_chemistry",
+      "label": "Water Chemistry Control",
+      "type": "InformationItem",
+      "color": "#E8A838",
+      "group": 1,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_2_1",
+      "label": "Table 5.2-1: ASME Code Cases",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "comp_UltimateHeatSink",
+      "label": "Ultimate Heat Sink",
+      "type": "Tank",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "Heat sink for DHRS (reactor pool or equivalent)"
+    },
+    {
+      "id": "sec_5_4_3_2",
+      "label": "System Design",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.2",
+      "description": "DHRS requirement: System Design"
+    },
+    {
+      "id": "tbl_5_3_1",
+      "label": "Table 5.3-1: Reactor Vessel Parameters",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC57",
+      "label": "GDC 57: Closed System Isolation Valves",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_4_2",
+      "label": "Table 5.4-2: SG Design Data",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_2_3",
+      "label": "Design Evaluation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.2.3",
+      "description": "RCS piping requirement: Design Evaluation"
+    },
+    {
+      "id": "std_ASME_B16_11",
+      "label": "ASME B16.11",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "Template",
+      "label": "Template",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "cond_5_4_3_passiveOp",
+      "label": "DHRS Passive Operation",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_sgTubeCount",
+      "label": "SG Tube Count",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_3_6",
+      "label": "Operating Conditions",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.6",
+      "description": "RPV integrity requirement: Operating Conditions"
+    },
+    {
+      "id": "sec_5_4_2_1",
+      "label": "Design Bases",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.2.1",
+      "description": "RCS piping requirement: Design Bases"
+    },
+    {
+      "id": "tbl_5_2_7",
+      "label": "Table 5.2-7: RCPB Class 2 ISI Examination Elements",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_waterChemistry",
+      "label": "Primary Water Chemistry Limits",
+      "type": "ChemistryParameter",
+      "color": "#45A864",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_isi",
+      "label": "ISI Program Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_rpvWeldMaterial",
+      "label": "RPV Weld Metal Material",
+      "type": "MaterialSpec",
+      "color": "#6BC882",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_sgDesignTemp",
+      "label": "SG Design Temperature",
+      "type": "ThermalParameter",
+      "color": "#3DA85E",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_2_2",
+      "label": "Table 5.2-2: Reactor Safety Valve Design Parameters",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_3_5",
+      "label": "Table 5.3-5: Charpy Impact Test Results",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_5_4",
+      "label": "Tests and Inspections",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.5.4",
+      "description": "Pressurizer requirement: Tests and Inspections"
+    },
+    {
+      "id": "dp_przHeaterPower",
+      "label": "Pressurizer Heater Power",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_sgIntegrity",
+      "label": "SG Integrity Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_2_3",
+      "label": "Pressurized Thermal Shock",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.2.3",
+      "description": "P-T limit requirement: Pressurized Thermal Shock"
+    },
+    {
+      "id": "std_PDC34",
+      "label": "PDC 34",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_przControl",
+      "label": "Pressurizer Control Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sys_CVCS",
+      "label": "Chemical and Volume Control System (CVCS)",
+      "type": "System",
+      "color": "#8E44AD",
+      "group": 5,
+      "section": "",
+      "description": "RCS chemistry, inventory, and boron concentration control"
+    },
+    {
+      "id": "Component",
+      "label": "Component",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "review_sgPerf",
+      "label": "SG Performance Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_4_5_przRelief",
+      "label": "Pressurizer Relief Adequacy",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "Condition",
+      "label": "Condition",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "review_rpvMaterial",
+      "label": "RPV Material Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_3_3",
+      "label": "Natural Phenomena",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.3.3",
+      "description": "DHRS performance: Natural Phenomena"
+    },
+    {
+      "id": "sec_5_4_1_5",
+      "label": "Steam Generator Materials",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1.5",
+      "description": "SG requirement: Steam Generator Materials"
+    },
+    {
+      "id": "dp_rpvCladdingMaterial",
+      "label": "RPV Cladding Material",
+      "type": "MaterialSpec",
+      "color": "#6BC882",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_rsvDesignParams",
+      "label": "RSV/RVV Design Parameters",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_pipingSize",
+      "label": "RCS Piping Sizes",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_3_8",
+      "label": "Testing and Examination",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.8",
+      "description": "RPV integrity requirement: Testing and Examination"
+    },
+    {
+      "id": "std_GDC30",
+      "label": "GDC 30: Quality of Reactor Coolant Pressure Boundary",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "Valve",
+      "label": "Valve",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "FlowParameter",
+      "label": "FlowParameter",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "std_RG_1_147",
+      "label": "RG 1.147: Inservice Inspection Code Case Acceptability",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "comp_DHRSCondenser",
+      "label": "DHRS Condenser(s)",
+      "type": "HeatExchanger",
+      "color": "#9B59B6",
+      "group": 4,
+      "section": "",
+      "description": "Passive decay heat removal heat exchanger(s)"
+    },
+    {
+      "id": "dp_sgType",
+      "label": "SG Type",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_use",
+      "label": "Upper-Shelf Energy Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_6",
+      "label": "References",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.6",
+      "description": "Section 5.2 references list"
+    },
+    {
+      "id": "review_dhrsSF",
+      "label": "DHRS Single Failure Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_pts",
+      "label": "PTS Screening Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_4_5_przControl",
+      "label": "Pressurizer Control Capability",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_2_1",
+      "label": "DHRS Actuation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.2.1",
+      "description": "DHRS system design: DHRS Actuation"
+    },
+    {
+      "id": "std_GDC54",
+      "label": "GDC 54: Piping Systems Penetrating Containment",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_3_4",
+      "label": "Equipment Qualification",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.3.4",
+      "description": "DHRS performance: Equipment Qualification"
+    },
+    {
+      "id": "tbl_5_2_4",
+      "label": "Table 5.2-4: RCPB Component Materials",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_rpvDesignLife",
+      "label": "RPV Design Life",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "FigureTemplate",
+      "label": "FigureTemplate",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "sec_5_3_1_3",
+      "label": "Special Methods for Nondestructive Examination",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1.3",
+      "description": "RPV material requirement: Special Methods for Nondestructive Examination"
+    },
+    {
+      "id": "sec_5_3_1_6",
+      "label": "Material Surveillance",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.1.6",
+      "description": "RPV material requirement: Material Surveillance"
+    },
+    {
+      "id": "std_GDC34",
+      "label": "GDC 34: Residual Heat Removal",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "fig_5_2_1",
+      "label": "Figure 5.2-1: RCPB Component Boundaries",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_sgProgram",
+      "label": "SG Program Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "HeatExchanger",
+      "label": "HeatExchanger",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "dp_przSprayCapacity",
+      "label": "Pressurizer Spray Capacity",
+      "type": "FlowParameter",
+      "color": "#2D9850",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC1",
+      "label": "GDC 1: Quality Standards and Records",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC2",
+      "label": "GDC 2: Design Bases for Protection Against Natural Phenomena",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "fig_5_4_3",
+      "label": "Figure 5.4-3: Pressurizer Arrangement",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_sgDesignPressure",
+      "label": "SG Design Pressure",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_sgTubeMaterial",
+      "label": "SG Tube Material",
+      "type": "MaterialSpec",
+      "color": "#6BC882",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_III",
+      "label": "ASME BPVC Section III",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_dhrsEQ",
+      "label": "DHRS Equipment Qualification Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_3_3_1",
+      "label": "Design",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.3.3.1",
+      "description": "RPV integrity requirement: Design"
+    },
+    {
+      "id": "review_reliefCap",
+      "label": "Relief System Capacity Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_pipingDesign",
+      "label": "RCS Piping Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_rpvIntegrity",
+      "label": "RPV Integrity Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_ventCap",
+      "label": "High-Point Vent Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_10CFR50_55a",
+      "label": "10 CFR 50.55a",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_NQA1",
+      "label": "ANSI/ASME NQA-1",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_leakDetect",
+      "label": "Leakage Detection Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "COLItem",
+      "label": "COLItem",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "dp_rcsDesignTemp",
+      "label": "RCS Design Temperature",
+      "type": "ThermalParameter",
+      "color": "#3DA85E",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_84",
+      "label": "RG 1.84: Design, Fabrication, and Materials Code Case Acceptability",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_71",
+      "label": "RG 1.71: Welder Qualification for Areas of Limited Accessibility",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_2_4",
+      "label": "Tests and Inspections",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.2.4",
+      "description": "RCS piping requirement: Tests and Inspections"
+    },
+    {
+      "id": "std_ASME_III_NG",
+      "label": "ASME Section III Subsection NG",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASTM_E185",
+      "label": "ASTM E185-82",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_3_3",
+      "label": "Table 5.3-3: Reactor Vessel Weld Data",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_rsvCapacity",
+      "label": "RSV Flow Capacity",
+      "type": "FlowParameter",
+      "color": "#2D9850",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_III_NB",
+      "label": "ASME Section III Subsection NB",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_codeEdition",
+      "label": "ASME Code Edition Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_5_2",
+      "label": "Design Description",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.5.2",
+      "description": "Pressurizer requirement: Design Description"
+    },
+    {
+      "id": "dp_dhrsTrainConfig",
+      "label": "DHRS Train Configuration",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_dhrsCap",
+      "label": "DHRS Capability Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_1_3",
+      "label": "Performance Analysis",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.1.3",
+      "description": "SG requirement: Performance Analysis"
+    },
+    {
+      "id": "fig_5_3_3",
+      "label": "Figure 5.3-3: P-T Limit Curves",
+      "type": "FigureTemplate",
+      "color": "#16A085",
+      "group": 8,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_2_2",
+      "label": "Design Description",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.2.2",
+      "description": "RCS piping requirement: Design Description"
+    },
+    {
+      "id": "std_10CFR50_46a",
+      "label": "10 CFR 50.46a",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "cond_5_4_3_dbePerformance",
+      "label": "DHRS DBE Performance",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_4_3_2_2",
+      "label": "DHRS Operation",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.4.3.2.2",
+      "description": "DHRS system design: DHRS Operation"
+    },
+    {
+      "id": "review_designMethod",
+      "label": "Design Methodology Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "MechanicalParameter",
+      "label": "MechanicalParameter",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "cond_5_3_2_ptsScreening",
+      "label": "PTS Screening Criteria",
+      "type": "Condition",
+      "color": "#E05252",
+      "group": 2,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_asmeEdition",
+      "label": "Applicable ASME BPVC Edition",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_43",
+      "label": "RG 1.43: Control of Stainless Steel Weld Cladding of Low-Alloy Steel Components",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_rpvSurv",
+      "label": "RPV Surveillance Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_ventCapacity",
+      "label": "Vent System Capacity",
+      "type": "FlowParameter",
+      "color": "#2D9850",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_10CFR50_63",
+      "label": "10 CFR 50.63",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "Piping",
+      "label": "Piping",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "TableTemplate",
+      "label": "TableTemplate",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "Instrument",
+      "label": "Instrument",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "review_leakLimits",
+      "label": "Leakage Limits Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_50",
+      "label": "RG 1.50: Control of Preheat Temperature for Welding of Low-Alloy Steel",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_codeCases",
+      "label": "Applicable Code Cases",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "ReviewActivity",
+      "label": "ReviewActivity",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "dp_rcsVolume",
+      "label": "RCS Total Volume",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC31",
+      "label": "GDC 31: Fracture Prevention of Reactor Coolant Pressure Boundary",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_10CFR50_AppG",
+      "label": "10 CFR 50 Appendix G",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_10CFR50_61",
+      "label": "10 CFR 50.61",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_ptsCriteria",
+      "label": "PTS Screening Values",
+      "type": "ThermalParameter",
+      "color": "#3DA85E",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_99",
+      "label": "RG 1.99: Radiation Embrittlement of Reactor Vessel Materials (Rev 2)",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_192",
+      "label": "RG 1.192: Operation and Maintenance Code Case Acceptability",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_dhrsActuation",
+      "label": "DHRS Actuation Method",
+      "type": "MechanicalParameter",
+      "color": "#50B86C",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "dp_rtndt",
+      "label": "RPV RT_NDT Values",
+      "type": "ThermalParameter",
+      "color": "#3DA85E",
+      "group": 3,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_RG_1_121",
+      "label": "RG 1.121: Bases for Plugging Degraded PWR Steam Generator Tubes",
+      "type": "RegulatoryGuide",
+      "color": "#E67E22",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "sec_5_2_5_7",
+      "label": "Intersystem Leakage",
+      "type": "Template",
+      "color": "#4A90D9",
+      "group": 0,
+      "section": "5.2.5.7",
+      "description": "Detailed requirements for intersystem leakage"
+    },
+    {
+      "id": "Tank",
+      "label": "Tank",
+      "type": "Class",
+      "color": "#34495E",
+      "group": 11
+    },
+    {
+      "id": "tbl_5_2_9",
+      "label": "Table 5.2-9: Pressure Testing Elements (Class 2)",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_10CFR52_47",
+      "label": "10 CFR 52.47(a)(4)",
+      "type": "FederalRegulation",
+      "color": "#D4A017",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_III_NF",
+      "label": "ASME Section III Subsection NF",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASME_III_NC",
+      "label": "ASME Section III Subsection NC",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC14",
+      "label": "GDC 14: Reactor Coolant Pressure Boundary",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_GDC19",
+      "label": "GDC 19: Control Room",
+      "type": "GeneralDesignCriterion",
+      "color": "#F39C12",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_sccResist",
+      "label": "SCC Resistance Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_ASTM_A262",
+      "label": "ASTM A262",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "std_NEI_97_06",
+      "label": "NEI 97-06",
+      "type": "IndustryCode",
+      "color": "#CA8622",
+      "group": 6,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_chemistry",
+      "label": "Water Chemistry Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "tbl_5_2_3",
+      "label": "Table 5.2-3: RCS Design Transients",
+      "type": "TableTemplate",
+      "color": "#1ABC9C",
+      "group": 7,
+      "section": "",
+      "description": ""
+    },
+    {
+      "id": "review_dbeAccom",
+      "label": "DBE Accommodation Review",
+      "type": "ReviewActivity",
+      "color": "#7F8C8D",
+      "group": 9,
+      "section": "",
+      "description": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "sec_5_3_2",
+      "target": "sec_5_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "sec_5_3_2_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "sec_5_3_2_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "sec_5_3_2_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "sec_5_3_2_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "std_ASME_XI_AppG",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "std_10CFR50_AppG",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "std_10CFR50_AppH",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "std_10CFR50_61",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "std_RG_1_99",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "item_5_3_2_ptLimits",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "item_5_3_2_use",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "tbl_5_3_7",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "tbl_5_3_8",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "tbl_5_3_9",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "tbl_5_3_10",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_2",
+      "target": "fig_5_3_3",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "cond_5_2_4_isiCompliance",
+      "target": "std_ASME_XI",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_4_isiCompliance",
+      "target": "std_10CFR50_55a",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_4_isiCompliance",
+      "target": "std_GDC32",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_4_isiCompliance",
+      "target": "dp_isiScope",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_4_isiCompliance",
+      "target": "review_isi",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_1_2",
+      "target": "sec_5_4_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_ventDesign",
+      "target": "item_5_4_4_ventDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4",
+      "target": "ch5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4",
+      "target": "sec_5_4_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4",
+      "target": "sec_5_4_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4",
+      "target": "sec_5_4_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4",
+      "target": "sec_5_4_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4",
+      "target": "sec_5_4_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4",
+      "target": "sec_5_4_6",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "tbl_5_2_5",
+      "target": "item_5_2_3_chemistry",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "item_5_4_3_dhrsPerf",
+      "target": "cond_5_4_3_dbePerformance",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_3_dhrsPerf",
+      "target": "cond_5_4_3_eqQual",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_3_dhrsPerf",
+      "target": "dp_dhrsHeatRemovalRate",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "sec_5_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "sec_5_4_3_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "sec_5_4_3_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "sec_5_4_3_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "sec_5_4_3_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC1",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC2",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC4",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC5",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC14",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC19",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC34",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_PDC34",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC54",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_GDC57",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_10CFR50_34f",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_10CFR50_62",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_10CFR50_63",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_10CFR20_1406",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_ASME_III_NC",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_IEEE_344",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_RG_1_97",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_RG_1_100",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "std_ASME_OM",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "item_5_4_3_dhrsPerf",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "tbl_5_4_4",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "tbl_5_4_5",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "tbl_5_4_8",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_3",
+      "target": "fig_5_4_2",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "item_5_4_5_przDesign",
+      "target": "cond_5_4_5_przControl",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_5_przDesign",
+      "target": "cond_5_4_5_przRelief",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_5_przDesign",
+      "target": "dp_przVolume",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_5_przDesign",
+      "target": "dp_przHeaterPower",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_5_przDesign",
+      "target": "dp_przSprayCapacity",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_5_przDesign",
+      "target": "dp_przDesignPressure",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_1",
+      "target": "ch5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_1",
+      "target": "item_5_1_rcsDesign",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_1",
+      "target": "item_5_1_inventory",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_1",
+      "target": "item_5_1_dhrs",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_1",
+      "target": "fig_5_1_1",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "ch5",
+      "target": "sec_5_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "ch5",
+      "target": "sec_5_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "ch5",
+      "target": "sec_5_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "ch5",
+      "target": "sec_5_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_6",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_7",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "sec_5_3_3_8",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "std_GDC1",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "std_GDC14",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "std_GDC30",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "std_GDC31",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "std_GDC32",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "std_ASME_III",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "std_ASME_XI",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "item_5_3_3_integrity",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_3_3",
+      "target": "tbl_5_3_1",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "comp_ReliefValves",
+      "target": "sys_RCS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_ReliefValves",
+      "target": "std_ASME_III",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_ReliefValves",
+      "target": "cond_5_2_2_overpressureMargin",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_ReliefValves",
+      "target": "cond_5_2_2_reliefCapacity",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_ReliefValves",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "cond_5_1_przControl",
+      "target": "std_GDC15",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "tbl_5_4_1",
+      "target": "item_5_4_1_sgDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "tbl_5_3_7",
+      "target": "item_5_3_2_ptLimits",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "sec_5_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "sec_5_4_1_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "sec_5_4_1_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "sec_5_4_1_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "sec_5_4_1_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "sec_5_4_1_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "sec_5_4_1_6",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "std_10CFR50_55a",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "std_ASME_III",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "std_ASME_XI",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "std_NEI_97_06",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "std_RG_1_20",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "std_RG_1_121",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "item_5_4_1_sgDesign",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "item_5_4_1_sgProgram",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "tbl_5_4_1",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "tbl_5_4_2",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "tbl_5_4_3",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "fig_5_4_1",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "sec_5_4_1",
+      "target": "col_5_4_1",
+      "type": "containsCOLItem",
+      "color": "#C0392B"
+    },
+    {
+      "source": "sec_5_4_5_1",
+      "target": "sec_5_4_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_6",
+      "target": "sec_5_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1_6",
+      "target": "sec_5_4_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1_6",
+      "target": "sec_5_4_1_6_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "item_5_3_3_integrity",
+      "target": "cond_5_3_3_integrityEval",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_3_3_integrity",
+      "target": "dp_rpvDesignLife",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_3_integrity",
+      "target": "dp_rpvFluence",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "sec_5_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "sec_5_4_4_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "sec_5_4_4_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "sec_5_4_4_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "sec_5_4_4_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "std_10CFR52_47",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "std_10CFR50_46a",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "std_10CFR50_34f",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_4",
+      "target": "item_5_4_4_ventDesign",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "cond_5_4_1_sgIntegrity",
+      "target": "std_GDC14",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgIntegrity",
+      "target": "std_GDC15",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgIntegrity",
+      "target": "std_ASME_III",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgIntegrity",
+      "target": "std_RG_1_121",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgIntegrity",
+      "target": "dp_sgTubeMaterial",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_1_sgIntegrity",
+      "target": "dp_sgPluggingCriteria",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_1_sgIntegrity",
+      "target": "review_sgIntegrity",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "dp_leakageLimits",
+      "target": "item_5_2_5_methods",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_leakageLimits",
+      "target": "cond_5_2_5_leakageLimits",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "tbl_5_4_6",
+      "target": "item_5_4_5_przDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "cond_5_2_1_codeAccept",
+      "target": "std_ASME_III",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_1_codeAccept",
+      "target": "std_10CFR50_55a",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_1_codeAccept",
+      "target": "dp_asmeEdition",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_1_codeAccept",
+      "target": "review_codeEdition",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "sec_5_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "sec_5_4_5_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "sec_5_4_5_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "sec_5_4_5_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "sec_5_4_5_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "sec_5_4_5_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "std_ASME_III",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "std_NQA1",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "std_GDC14",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "std_GDC15",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "item_5_4_5_przDesign",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "tbl_5_4_6",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "tbl_5_4_7",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_5",
+      "target": "fig_5_4_3",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "cond_5_3_3_integrityEval",
+      "target": "std_GDC14",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_3_integrityEval",
+      "target": "std_GDC31",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_3_integrityEval",
+      "target": "std_GDC32",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_3_integrityEval",
+      "target": "std_ASME_III",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_3_integrityEval",
+      "target": "std_ASME_XI",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_3_integrityEval",
+      "target": "review_rpvIntegrity",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "comp_Pressurizer",
+      "target": "sys_RCS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_Pressurizer",
+      "target": "std_ASME_III",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_Pressurizer",
+      "target": "cond_5_4_5_przControl",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_Pressurizer",
+      "target": "cond_5_4_5_przRelief",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_Pressurizer",
+      "target": "item_5_4_5_przDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "comp_Pressurizer",
+      "target": "comp_RPV",
+      "type": "connectedTo",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "tbl_5_4_7",
+      "target": "item_5_4_5_przDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "cond_5_4_1_sgProgram",
+      "target": "std_NEI_97_06",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgProgram",
+      "target": "std_10CFR50_55a",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgProgram",
+      "target": "review_sgProgram",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "comp_SG",
+      "target": "sys_RCS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_SG",
+      "target": "std_ASME_III",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_SG",
+      "target": "std_10CFR50_55a",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_SG",
+      "target": "cond_5_4_1_sgPerformance",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_SG",
+      "target": "cond_5_4_1_sgIntegrity",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_SG",
+      "target": "item_5_4_1_sgDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "comp_SG",
+      "target": "comp_RPV",
+      "type": "connectedTo",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "cond_5_4_3_dhrsCapability",
+      "target": "std_GDC34",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_dhrsCapability",
+      "target": "std_PDC34",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_dhrsCapability",
+      "target": "dp_dhrsCapacity",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_3_dhrsCapability",
+      "target": "review_dhrsCap",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_5_3",
+      "target": "sec_5_4_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3_1_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3_1_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3_1_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3_1_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3_1_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3_1_6",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "sec_5_3_1_7",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_GDC1",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_GDC4",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_GDC14",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_GDC30",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_GDC31",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_10CFR50_AppG",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_ASME_III_NB",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_ASME_III_NG",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_ASME_III_NF",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_RG_1_44",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_RG_1_65",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_RG_1_99",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_ASTM_A262",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "std_ASTM_E185",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "item_5_3_1_materials",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "item_5_3_1_fracture",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "tbl_5_3_2",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "tbl_5_3_3",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "tbl_5_3_4",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "tbl_5_3_5",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "tbl_5_3_6",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_1",
+      "target": "fig_5_3_2",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "item_5_3_2_ptLimits",
+      "target": "cond_5_3_2_ptCompliance",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_3_2_ptLimits",
+      "target": "cond_5_3_2_ptsScreening",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_3_2_ptLimits",
+      "target": "dp_ptLimits",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_2_ptLimits",
+      "target": "dp_ptsCriteria",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_fractureToughness",
+      "target": "item_5_3_1_fracture",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_fractureToughness",
+      "target": "cond_5_3_1_fractureToughness",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_1_dhrs",
+      "target": "cond_5_1_dhrsCapability",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_1_dhrs",
+      "target": "dp_dhrsCapacity",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2_5_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2_5_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2_5_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2_5_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2_5_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2_5_6",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "sec_5_2_5_7",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "std_GDC30",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "std_RG_1_45",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "item_5_2_5_methods",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_2_5",
+      "target": "col_5_2_7",
+      "type": "containsCOLItem",
+      "color": "#C0392B"
+    },
+    {
+      "source": "dp_isiScope",
+      "target": "item_5_2_4_isi",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_isiScope",
+      "target": "cond_5_2_4_isiCompliance",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "tbl_5_4_4",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "cond_5_3_2_ptCompliance",
+      "target": "std_ASME_XI_AppG",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_2_ptCompliance",
+      "target": "std_10CFR50_AppG",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_2_ptCompliance",
+      "target": "std_RG_1_99",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_2_ptCompliance",
+      "target": "dp_ptLimits",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_3_2_ptCompliance",
+      "target": "review_ptLimits",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "cond_5_2_3_sccResistance",
+      "target": "std_GDC4",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_3_sccResistance",
+      "target": "std_RG_1_44",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_3_sccResistance",
+      "target": "std_ASTM_A262",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_3_sccResistance",
+      "target": "review_sccResist",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_4_1",
+      "target": "sec_5_4_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "tbl_5_3_10",
+      "target": "item_5_3_2_use",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "dp_majorComponents",
+      "target": "item_5_1_rcsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "ch5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "sec_5_2_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "sec_5_2_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "sec_5_2_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "sec_5_2_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "sec_5_2_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "sec_5_2_6",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2",
+      "target": "fig_5_2_1",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "sys_RCS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "std_ASME_III",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "std_10CFR50_55a",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "cond_5_3_1_materialSpec",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "cond_5_3_1_fractureToughness",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "cond_5_3_3_integrityEval",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "item_5_3_1_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "item_5_3_3_integrity",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "comp_SG",
+      "type": "connectedTo",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_RPV",
+      "target": "comp_Pressurizer",
+      "type": "connectedTo",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_RCSPiping",
+      "target": "sys_RCS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_RCSPiping",
+      "target": "std_ASME_III_NB",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_RCSPiping",
+      "target": "cond_5_4_2_pipingDesign",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_RCSPiping",
+      "target": "item_5_4_2_piping",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "comp_RCSPiping",
+      "target": "comp_SG",
+      "type": "flowPath",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "comp_RCSPiping",
+      "target": "comp_RPV",
+      "type": "flowPath",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sec_5_3_3_5",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_dhrsCapacity",
+      "target": "item_5_1_dhrs",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_dhrsCapacity",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_dhrsCapacity",
+      "target": "cond_5_4_3_dhrsCapability",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "sec_5_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "sec_5_4_2_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "sec_5_4_2_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "sec_5_4_2_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "sec_5_4_2_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "sec_5_4_2_5",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "std_ASME_III_NB",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "std_ASME_B16_11",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_4_2",
+      "target": "item_5_4_2_piping",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_4_3_3_2",
+      "target": "sec_5_4_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_rcsDesignPressure",
+      "target": "item_5_1_rcsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rcsDesignPressure",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rcsDesignPressure",
+      "target": "cond_5_2_2_overpressureMargin",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_4_3_1",
+      "target": "sec_5_4_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_2_2_reliefCapacity",
+      "target": "std_GDC15",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_2_reliefCapacity",
+      "target": "std_ASME_III",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_2_reliefCapacity",
+      "target": "dp_rsvCapacity",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_2_reliefCapacity",
+      "target": "review_reliefCap",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sys_DHRS",
+      "target": "sys_RCS",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_DHRS",
+      "target": "comp_DHRSCondenser",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_DHRS",
+      "target": "comp_DHRSValves",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_DHRS",
+      "target": "comp_UltimateHeatSink",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "dp_przDesignPressure",
+      "target": "item_5_4_5_przDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_przDesignPressure",
+      "target": "cond_5_4_5_przRelief",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_1_designMethod",
+      "target": "std_ASME_III_NB",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_1_designMethod",
+      "target": "review_designMethod",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_2_5_6",
+      "target": "sec_5_2_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "tbl_5_2_6",
+      "target": "item_5_2_4_isi",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "cond_5_3_1_fractureToughness",
+      "target": "std_GDC31",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_fractureToughness",
+      "target": "std_10CFR50_AppG",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_fractureToughness",
+      "target": "dp_fractureToughness",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_3_1_fractureToughness",
+      "target": "dp_useEnergy",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_3_1_fractureToughness",
+      "target": "review_fracture",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_4_3",
+      "target": "sec_5_4_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_sgPluggingCriteria",
+      "target": "item_5_4_1_sgProgram",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_sgPluggingCriteria",
+      "target": "cond_5_4_1_sgIntegrity",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_1_sgProgram",
+      "target": "cond_5_4_1_sgProgram",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_1_sgProgram",
+      "target": "dp_sgPluggingCriteria",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_1_sgProgram",
+      "target": "col_5_4_1",
+      "type": "relatedCOLItem",
+      "color": "#C0392B"
+    },
+    {
+      "source": "fig_5_2_2",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "item_5_2_5_methods",
+      "target": "cond_5_2_5_detectionCapability",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_5_methods",
+      "target": "cond_5_2_5_leakageLimits",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_5_methods",
+      "target": "dp_leakageDetection",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_5_methods",
+      "target": "dp_leakageLimits",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_5_methods",
+      "target": "col_5_2_7",
+      "type": "relatedCOLItem",
+      "color": "#C0392B"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "std_GDC1",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "std_GDC14",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "std_GDC30",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "std_GDC31",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "std_ASME_III_NB",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "std_10CFR50_AppG",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "dp_rpvMaterial",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_3_1_materialSpec",
+      "target": "review_rpvMaterial",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_3_1_4",
+      "target": "sec_5_3_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_2_3_chemistryControl",
+      "target": "std_RG_1_44",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_3_chemistryControl",
+      "target": "dp_waterChemistry",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_3_chemistryControl",
+      "target": "review_chemistry",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "sec_5_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_GDC1",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_GDC4",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_GDC14",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_GDC30",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_GDC31",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_ASME_III_NB",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_RG_1_43",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_RG_1_44",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_RG_1_50",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_RG_1_71",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "std_ASTM_A262",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "item_5_2_3_materials",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "item_5_2_3_chemistry",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "tbl_5_2_4",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_3",
+      "target": "tbl_5_2_5",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3_2_1",
+      "target": "sec_5_3_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_4_2",
+      "target": "sec_5_4_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_4_2_pipingDesign",
+      "target": "std_ASME_III_NB",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_2_pipingDesign",
+      "target": "std_GDC1",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_2_pipingDesign",
+      "target": "std_GDC14",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_2_pipingDesign",
+      "target": "dp_pipingMaterial",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_2_pipingDesign",
+      "target": "dp_pipingDesignPressure",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_2_pipingDesign",
+      "target": "review_pipingDesign",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "sec_5_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "std_ASME_III",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "std_10CFR50_55a",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "std_RG_1_84",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "std_RG_1_147",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "std_RG_1_192",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "std_ASME_OM",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "item_5_2_1_codeEdition",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "item_5_2_1_fabrication",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_2_1",
+      "target": "tbl_5_2_1",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "dp_pipingMaterial",
+      "target": "item_5_2_3_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_pipingMaterial",
+      "target": "item_5_4_2_piping",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_pipingMaterial",
+      "target": "cond_5_2_3_materialCompliance",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_pipingMaterial",
+      "target": "cond_5_4_2_pipingDesign",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_DHRSValves",
+      "target": "sys_DHRS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_DHRSValves",
+      "target": "std_ASME_III_NC",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_DHRSValves",
+      "target": "cond_5_4_3_passiveOp",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "tbl_5_4_3",
+      "target": "item_5_4_1_sgDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "dp_pipingDesignPressure",
+      "target": "item_5_4_2_piping",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_pipingDesignPressure",
+      "target": "cond_5_4_2_pipingDesign",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_3_materials",
+      "target": "cond_5_2_3_materialCompliance",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_3_materials",
+      "target": "cond_5_2_3_sccResistance",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_3_materials",
+      "target": "dp_rpvMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_3_materials",
+      "target": "dp_sgTubeMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_3_materials",
+      "target": "dp_pipingMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_3_materials",
+      "target": "dp_crdmMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_3_1_7",
+      "target": "sec_5_3_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "item_5_4_4_ventDesign",
+      "target": "cond_5_4_4_ventCapability",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_4_ventDesign",
+      "target": "dp_ventDesign",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_4_ventDesign",
+      "target": "dp_ventCapacity",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_1_fracture",
+      "target": "cond_5_3_1_fractureToughness",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_3_1_fracture",
+      "target": "dp_fractureToughness",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_1_fracture",
+      "target": "dp_rtndt",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_1_fracture",
+      "target": "dp_useEnergy",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "cond_5_2_5_leakageLimits",
+      "target": "std_GDC30",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_5_leakageLimits",
+      "target": "dp_leakageLimits",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_5_leakageLimits",
+      "target": "review_leakLimits",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_3_1_5",
+      "target": "sec_5_3_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_4",
+      "target": "sec_5_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "comp_HighPointVent",
+      "target": "sys_RCS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_HighPointVent",
+      "target": "std_10CFR50_34f",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_HighPointVent",
+      "target": "cond_5_4_4_ventCapability",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_HighPointVent",
+      "target": "item_5_4_4_ventDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_1_rcsDesign",
+      "target": "cond_5_1_configReq",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_1_rcsDesign",
+      "target": "cond_5_1_dbeAccom",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_1_rcsDesign",
+      "target": "dp_rcsLayout",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_1_rcsDesign",
+      "target": "dp_majorComponents",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_1_rcsDesign",
+      "target": "dp_rcsDesignPressure",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_1_rcsDesign",
+      "target": "dp_rcsDesignTemp",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_4_isi",
+      "target": "cond_5_2_4_isiCompliance",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_4_isi",
+      "target": "dp_isiScope",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_4_isi",
+      "target": "dp_isiAccessibility",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "cond_5_1_configReq",
+      "target": "std_GDC10",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_1_configReq",
+      "target": "review_rcsConfig",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "cond_5_2_3_materialCompliance",
+      "target": "std_GDC14",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_3_materialCompliance",
+      "target": "std_GDC30",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_3_materialCompliance",
+      "target": "std_ASME_III",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_3_materialCompliance",
+      "target": "dp_rpvMaterial",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_3_materialCompliance",
+      "target": "dp_sgTubeMaterial",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_3_materialCompliance",
+      "target": "dp_pipingMaterial",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_3_materialCompliance",
+      "target": "review_materialCompl",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "item_5_4_3_dhrsDesign",
+      "target": "cond_5_4_3_dhrsCapability",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_3_dhrsDesign",
+      "target": "cond_5_4_3_passiveOp",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_3_dhrsDesign",
+      "target": "cond_5_4_3_singleFailure",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_3_dhrsDesign",
+      "target": "dp_dhrsCapacity",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_3_dhrsDesign",
+      "target": "dp_dhrsActuation",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_3_dhrsDesign",
+      "target": "dp_dhrsTrainConfig",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "cond_5_1_dhrsCapability",
+      "target": "std_GDC34",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_3_3_2",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1_2",
+      "target": "sec_5_3_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "comp_LeakageDetectors",
+      "target": "sys_CES",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_LeakageDetectors",
+      "target": "std_RG_1_45",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_LeakageDetectors",
+      "target": "cond_5_2_5_detectionCapability",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_LeakageDetectors",
+      "target": "item_5_2_5_methods",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "cond_5_4_1_sgPerformance",
+      "target": "std_GDC1",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgPerformance",
+      "target": "std_RG_1_20",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_1_sgPerformance",
+      "target": "dp_sgHeatTransfer",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_1_sgPerformance",
+      "target": "review_sgPerf",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "dp_rpvMaterial",
+      "target": "item_5_2_3_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rpvMaterial",
+      "target": "item_5_3_1_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rpvMaterial",
+      "target": "cond_5_2_3_materialCompliance",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_rpvMaterial",
+      "target": "cond_5_3_1_materialSpec",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_4_1_1",
+      "target": "sec_5_4_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_3_1_surveillance",
+      "target": "std_ASTM_E185",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_surveillance",
+      "target": "std_10CFR50_AppH",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_1_surveillance",
+      "target": "review_rpvSurv",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "sec_5_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "std_ASME_XI",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "std_10CFR50_55a",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "std_GDC32",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "item_5_2_4_isi",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "tbl_5_2_6",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "tbl_5_2_7",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "tbl_5_2_8",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "tbl_5_2_9",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_4",
+      "target": "tbl_5_2_10",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "cond_5_4_1_sgPerformance",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "cond_5_4_1_sgIntegrity",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "dp_sgType",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "dp_sgTubeMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "dp_sgDesignPressure",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "dp_sgDesignTemp",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "dp_sgHeatTransfer",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_1_sgDesign",
+      "target": "dp_sgTubeCount",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rsvSetpoint",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_2_5_1",
+      "target": "sec_5_2_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "item_5_2_2_reliefDesign",
+      "target": "cond_5_2_2_overpressureMargin",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_2_reliefDesign",
+      "target": "cond_5_2_2_reliefCapacity",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_2_reliefDesign",
+      "target": "dp_rsvDesignParams",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_2_reliefDesign",
+      "target": "dp_rsvSetpoint",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_2_reliefDesign",
+      "target": "dp_rsvCapacity",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_3_3_1",
+      "target": "sec_5_4_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_przVolume",
+      "target": "item_5_4_5_przDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_1_6_1",
+      "target": "sec_5_4_1_6",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_rpvFluence",
+      "target": "item_5_3_3_integrity",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "fig_5_4_1",
+      "target": "item_5_4_1_sgDesign",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "cond_5_3_2_useRequirement",
+      "target": "std_10CFR50_AppG",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_2_useRequirement",
+      "target": "dp_useEnergy",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_3_2_useRequirement",
+      "target": "review_use",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_3_1_1",
+      "target": "sec_5_3_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_leakageDetection",
+      "target": "item_5_2_5_methods",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_leakageDetection",
+      "target": "cond_5_2_5_detectionCapability",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_4_4_4",
+      "target": "sec_5_4_4",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "item_5_2_1_codeEdition",
+      "target": "cond_5_2_1_codeAccept",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_1_codeEdition",
+      "target": "dp_asmeEdition",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_2_1_codeEdition",
+      "target": "dp_codeCases",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_pressurizerVolume",
+      "target": "item_5_1_inventory",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "sys_DHRS",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "sys_CVCS",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "sys_ECCS",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "sys_CES",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "comp_RPV",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "comp_SG",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "comp_Pressurizer",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "comp_RCSPiping",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "comp_ReliefValves",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_RCS",
+      "target": "comp_HighPointVent",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "dp_dhrsHeatRemovalRate",
+      "target": "item_5_4_3_dhrsPerf",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_1_4",
+      "target": "sec_5_4_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "fig_5_3_1",
+      "target": "item_5_3_3_integrity",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "dp_useEnergy",
+      "target": "item_5_3_1_fracture",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_useEnergy",
+      "target": "item_5_3_2_use",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_useEnergy",
+      "target": "cond_5_3_1_fractureToughness",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_useEnergy",
+      "target": "cond_5_3_2_useRequirement",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_rcsLayout",
+      "target": "item_5_1_rcsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_2_5",
+      "target": "sec_5_4_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "item_5_3_2_use",
+      "target": "cond_5_3_2_useRequirement",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_3_2_use",
+      "target": "dp_useEnergy",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "tbl_5_4_8",
+      "target": "item_5_4_3_dhrsPerf",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "item_5_4_2_piping",
+      "target": "cond_5_4_2_pipingDesign",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_4_2_piping",
+      "target": "dp_pipingMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_2_piping",
+      "target": "dp_pipingDesignPressure",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_4_2_piping",
+      "target": "dp_pipingSize",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_2_5_3",
+      "target": "sec_5_2_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_4_4_ventCapability",
+      "target": "std_10CFR50_34f",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_4_ventCapability",
+      "target": "std_10CFR52_47",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_4_ventCapability",
+      "target": "dp_ventCapacity",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_4_ventCapability",
+      "target": "review_ventCap",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "dp_isiAccessibility",
+      "target": "item_5_2_4_isi",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_3_2_4",
+      "target": "sec_5_3_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_sgHeatTransfer",
+      "target": "item_5_4_1_sgDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_sgHeatTransfer",
+      "target": "cond_5_4_1_sgPerformance",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "tbl_5_3_2",
+      "target": "item_5_3_1_materials",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_3",
+      "target": "ch5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3",
+      "target": "sec_5_3_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3",
+      "target": "sec_5_3_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3",
+      "target": "sec_5_3_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3",
+      "target": "sec_5_3_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3",
+      "target": "fig_5_3_1",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "sec_5_3_3_3",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "tbl_5_4_5",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_5_2",
+      "target": "sec_5_2_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sys_ECCS",
+      "target": "sys_RCS",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "fig_5_4_2",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "sys_CES",
+      "target": "sys_RCS",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "sys_CES",
+      "target": "comp_LeakageDetectors",
+      "type": "containsComponent",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "cond_5_4_3_singleFailure",
+      "target": "std_GDC34",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_singleFailure",
+      "target": "review_dhrsSF",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_3_3_7",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_5_5",
+      "target": "sec_5_4_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_4_3_eqQual",
+      "target": "std_GDC2",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_eqQual",
+      "target": "std_GDC4",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_eqQual",
+      "target": "std_IEEE_344",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_eqQual",
+      "target": "std_RG_1_100",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_eqQual",
+      "target": "review_dhrsEQ",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "fig_5_1_1",
+      "target": "item_5_1_rcsDesign",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "sec_5_4_3_4",
+      "target": "sec_5_4_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_5_5",
+      "target": "sec_5_2_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_3_4",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_3",
+      "target": "sec_5_4_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_3",
+      "target": "sec_5_4_3_3_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_3",
+      "target": "sec_5_4_3_3_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_3",
+      "target": "sec_5_4_3_3_3",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_3",
+      "target": "sec_5_4_3_3_4",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "item_5_1_inventory",
+      "target": "cond_5_1_przControl",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_1_inventory",
+      "target": "dp_pressurizerVolume",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_1_inventory",
+      "target": "dp_rcsVolume",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_1_materials",
+      "target": "cond_5_3_1_materialSpec",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_3_1_materials",
+      "target": "cond_5_3_1_surveillance",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_3_1_materials",
+      "target": "dp_rpvMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_1_materials",
+      "target": "dp_rpvWeldMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_1_materials",
+      "target": "dp_rpvCladdingMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "item_5_3_1_materials",
+      "target": "dp_rpvFastenerMaterial",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "sec_5_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "std_GDC14",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "std_GDC15",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "std_GDC31",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "std_ASME_III_NB",
+      "type": "crossReferences",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "containsItem",
+      "color": "#E8A838"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "tbl_5_2_2",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "tbl_5_2_3",
+      "type": "containsTable",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_2_2",
+      "target": "fig_5_2_2",
+      "type": "containsFigure",
+      "color": "#16A085"
+    },
+    {
+      "source": "dp_crdmMaterial",
+      "target": "item_5_2_3_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "tbl_5_3_9",
+      "target": "item_5_3_2_ptLimits",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "item_5_2_1_fabrication",
+      "target": "cond_5_2_1_designMethod",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_3_2_2",
+      "target": "sec_5_3_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_rpvFastenerMaterial",
+      "target": "item_5_3_1_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "cond_5_1_dbeAccom",
+      "target": "std_GDC1",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_1_dbeAccom",
+      "target": "review_dbeAccom",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_2_5_4",
+      "target": "sec_5_2_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_2_5_detectionCapability",
+      "target": "std_GDC30",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_5_detectionCapability",
+      "target": "std_RG_1_45",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_5_detectionCapability",
+      "target": "dp_leakageDetection",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_5_detectionCapability",
+      "target": "review_leakDetect",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "cond_5_2_2_overpressureMargin",
+      "target": "std_GDC14",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_2_overpressureMargin",
+      "target": "std_GDC15",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_2_overpressureMargin",
+      "target": "std_ASME_III_NB",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_2_2_overpressureMargin",
+      "target": "dp_rcsDesignPressure",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_2_2_overpressureMargin",
+      "target": "review_overpressure",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "dp_ptLimits",
+      "target": "item_5_3_2_ptLimits",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_ptLimits",
+      "target": "cond_5_3_2_ptCompliance",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_3_chemistry",
+      "target": "cond_5_2_3_chemistryControl",
+      "type": "requires",
+      "color": "#E05252"
+    },
+    {
+      "source": "item_5_2_3_chemistry",
+      "target": "dp_waterChemistry",
+      "type": "governs",
+      "color": "#50B86C"
+    },
+    {
+      "source": "tbl_5_2_1",
+      "target": "item_5_2_1_codeEdition",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "comp_UltimateHeatSink",
+      "target": "sys_DHRS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "sec_5_4_3_2",
+      "target": "sec_5_4_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_2",
+      "target": "sec_5_4_3_2_1",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_2",
+      "target": "sec_5_4_3_2_2",
+      "type": "contains",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "tbl_5_3_1",
+      "target": "item_5_3_3_integrity",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "tbl_5_4_2",
+      "target": "item_5_4_1_sgDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_2_3",
+      "target": "sec_5_4_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_4_3_passiveOp",
+      "target": "std_GDC34",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_passiveOp",
+      "target": "std_10CFR50_63",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_passiveOp",
+      "target": "review_dhrsPassive",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "dp_sgTubeCount",
+      "target": "item_5_4_1_sgDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_3_3_6",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_2_1",
+      "target": "sec_5_4_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_waterChemistry",
+      "target": "item_5_2_3_chemistry",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_waterChemistry",
+      "target": "cond_5_2_3_chemistryControl",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_rpvWeldMaterial",
+      "target": "item_5_3_1_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_sgDesignTemp",
+      "target": "item_5_4_1_sgDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "tbl_5_2_2",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "tbl_5_3_5",
+      "target": "item_5_3_1_fracture",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "sec_5_4_5_4",
+      "target": "sec_5_4_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_przHeaterPower",
+      "target": "item_5_4_5_przDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_przHeaterPower",
+      "target": "cond_5_4_5_przControl",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_3_2_3",
+      "target": "sec_5_3_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sys_CVCS",
+      "target": "sys_RCS",
+      "type": "interfacesWith",
+      "color": "#8E44AD"
+    },
+    {
+      "source": "cond_5_4_5_przRelief",
+      "target": "std_GDC14",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_5_przRelief",
+      "target": "std_GDC15",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_5_przRelief",
+      "target": "dp_przDesignPressure",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_5_przRelief",
+      "target": "review_przRelief",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_3_3_3",
+      "target": "sec_5_4_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_1_5",
+      "target": "sec_5_4_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_rpvCladdingMaterial",
+      "target": "item_5_3_1_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rsvDesignParams",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_pipingSize",
+      "target": "item_5_4_2_piping",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_3_3_8",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "comp_DHRSCondenser",
+      "target": "sys_DHRS",
+      "type": "partOf",
+      "color": "#9B59B6"
+    },
+    {
+      "source": "comp_DHRSCondenser",
+      "target": "std_ASME_III_NC",
+      "type": "compliesWith",
+      "color": "#F39C12"
+    },
+    {
+      "source": "comp_DHRSCondenser",
+      "target": "cond_5_4_3_dhrsCapability",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "comp_DHRSCondenser",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_sgType",
+      "target": "item_5_4_1_sgDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_2_6",
+      "target": "sec_5_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_4_5_przControl",
+      "target": "std_GDC15",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_5_przControl",
+      "target": "dp_przHeaterPower",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_5_przControl",
+      "target": "dp_przSprayCapacity",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_4_5_przControl",
+      "target": "review_przControl",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_3_2_1",
+      "target": "sec_5_4_3_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_4_3_3_4",
+      "target": "sec_5_4_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "tbl_5_2_4",
+      "target": "item_5_2_3_materials",
+      "type": "tableSupports",
+      "color": "#1ABC9C"
+    },
+    {
+      "source": "dp_rpvDesignLife",
+      "target": "item_5_3_3_integrity",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_3_1_3",
+      "target": "sec_5_3_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "sec_5_3_1_6",
+      "target": "sec_5_3_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "fig_5_2_1",
+      "target": "item_5_2_1_codeEdition",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "dp_przSprayCapacity",
+      "target": "item_5_4_5_przDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_przSprayCapacity",
+      "target": "cond_5_4_5_przControl",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "fig_5_4_3",
+      "target": "item_5_4_5_przDesign",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "dp_sgDesignPressure",
+      "target": "item_5_4_1_sgDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_sgTubeMaterial",
+      "target": "item_5_2_3_materials",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_sgTubeMaterial",
+      "target": "item_5_4_1_sgDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_sgTubeMaterial",
+      "target": "cond_5_2_3_materialCompliance",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_sgTubeMaterial",
+      "target": "cond_5_4_1_sgIntegrity",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_3_3_1",
+      "target": "sec_5_3_3",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_rcsDesignTemp",
+      "target": "item_5_1_rcsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_2_4",
+      "target": "sec_5_4_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_rsvCapacity",
+      "target": "item_5_2_2_reliefDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rsvCapacity",
+      "target": "cond_5_2_2_reliefCapacity",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "sec_5_4_5_2",
+      "target": "sec_5_4_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "dp_dhrsTrainConfig",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_4_1_3",
+      "target": "sec_5_4_1",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "fig_5_3_3",
+      "target": "item_5_3_2_ptLimits",
+      "type": "figureSupports",
+      "color": "#16A085"
+    },
+    {
+      "source": "sec_5_4_2_2",
+      "target": "sec_5_4_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_4_3_dbePerformance",
+      "target": "std_GDC34",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_dbePerformance",
+      "target": "std_GDC35",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_4_3_dbePerformance",
+      "target": "review_dhrsDbe",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "sec_5_4_3_2_2",
+      "target": "sec_5_4_3_2",
+      "type": "parent",
+      "color": "#4A90D9"
+    },
+    {
+      "source": "cond_5_3_2_ptsScreening",
+      "target": "std_10CFR50_61",
+      "type": "references",
+      "color": "#95A5A6"
+    },
+    {
+      "source": "cond_5_3_2_ptsScreening",
+      "target": "dp_ptsCriteria",
+      "type": "validates",
+      "color": "#E05252"
+    },
+    {
+      "source": "cond_5_3_2_ptsScreening",
+      "target": "review_pts",
+      "type": "isEvaluatedBy",
+      "color": "#7F8C8D"
+    },
+    {
+      "source": "dp_asmeEdition",
+      "target": "item_5_2_1_codeEdition",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_asmeEdition",
+      "target": "cond_5_2_1_codeAccept",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_ventCapacity",
+      "target": "item_5_4_4_ventDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_ventCapacity",
+      "target": "cond_5_4_4_ventCapability",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_codeCases",
+      "target": "item_5_2_1_codeEdition",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rcsVolume",
+      "target": "item_5_1_inventory",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_ptsCriteria",
+      "target": "item_5_3_2_ptLimits",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_ptsCriteria",
+      "target": "cond_5_3_2_ptsScreening",
+      "type": "verifiedBy",
+      "color": "#E05252"
+    },
+    {
+      "source": "dp_dhrsActuation",
+      "target": "item_5_4_3_dhrsDesign",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "dp_rtndt",
+      "target": "item_5_3_1_fracture",
+      "type": "satisfies",
+      "color": "#50B86C"
+    },
+    {
+      "source": "sec_5_2_5_7",
+      "target": "sec_5_2_5",
+      "type": "parent",
+      "color": "#4A90D9"
+    }
+  ],
+  "stats": {
+    "total_nodes": 353,
+    "total_edges": 693,
+    "node_types": {
+      "Template": 78,
+      "Condition": 33,
+      "MechanicalParameter": 29,
+      "TableTemplate": 28,
+      "RegulatoryGuide": 14,
+      "InformationItem": 22,
+      "Class": 31,
+      "Valve": 3,
+      "IndustryCode": 15,
+      "COLItem": 2,
+      "FlowParameter": 4,
+      "Pressurizer": 1,
+      "SteamGenerator": 1,
+      "GeneralDesignCriterion": 17,
+      "ReactorPressureVessel": 1,
+      "Piping": 1,
+      "ThermalParameter": 7,
+      "FederalRegulation": 10,
+      "System": 5,
+      "FigureTemplate": 9,
+      "MaterialSpec": 7,
+      "Instrument": 1,
+      "ReviewActivity": 31,
+      "Tank": 1,
+      "ChemistryParameter": 1,
+      "HeatExchanger": 1
+    },
+    "edge_types": {
+      "parent": 77,
+      "contains": 77,
+      "crossReferences": 86,
+      "containsItem": 22,
+      "containsTable": 28,
+      "containsFigure": 9,
+      "references": 72,
+      "validates": 26,
+      "isEvaluatedBy": 31,
+      "satisfies": 63,
+      "tableSupports": 19,
+      "requires": 33,
+      "governs": 53,
+      "partOf": 10,
+      "compliesWith": 11,
+      "verifiedBy": 40,
+      "containsCOLItem": 2,
+      "connectedTo": 4,
+      "flowPath": 2,
+      "interfacesWith": 8,
+      "containsComponent": 10,
+      "relatedCOLItem": 2,
+      "figureSupports": 8
+    }
+  }
+}
